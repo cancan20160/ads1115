@@ -1,0 +1,112 @@
+\doxysection{interface/ads1115\+\_\+interface.c File Reference}
+\hypertarget{ads1115__interface_8c}{}\label{ads1115__interface_8c}\index{interface/ads1115\_interface.c@{interface/ads1115\_interface.c}}
+
+
+ADS1115 I2C read/write and delay callback function implementations.  
+
+
+{\ttfamily \#include "{}ads1115\+\_\+interface.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{ads1115__interface_8c_a55e739173564587095e6deb3f2d2dc64}{ads1115\+\_\+i2c\+\_\+write}} (uint8\+\_\+t i2c\+\_\+addr, uint8\+\_\+t reg\+\_\+addr, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em ADS1115 I2C write function (\doxylink{ads1115_8h_a7f92f74640465fba87e6c0594854f70a}{ads1115\+\_\+i2c\+\_\+write\+\_\+t} callback) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{ads1115__interface_8c_aed91b8fad8db648d3f65acfe5424367e}{ads1115\+\_\+i2c\+\_\+read}} (uint8\+\_\+t i2c\+\_\+addr, uint8\+\_\+t reg\+\_\+addr, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em ADS1115 I2C read function (\doxylink{ads1115_8h_a3a0f1e6f2cfd94a667f605d8baead7ca}{ads1115\+\_\+i2c\+\_\+read\+\_\+t} callback) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ads1115__interface_8c_a751c154459a9f0111ddb695b5d57ba9e}{ads1115\+\_\+delay\+\_\+ms}} (uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em ADS1115 delay\+\_\+ms function (\doxylink{ads1115_8h_a2e82240ef42eb5a490b4cbc5f8e2d809}{ads1115\+\_\+delay\+\_\+ms\+\_\+t} callback) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ADS1115 I2C read/write and delay callback function implementations. 
+
+\begin{DoxyAuthor}{Author}
+Şükrü Can Kılıç 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+19.\+01.\+2026 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{ads1115__interface_8c_source}{ads1115\+\_\+interface.\+c}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{ads1115__interface_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{ads1115__interface_8c_a751c154459a9f0111ddb695b5d57ba9e}\index{ads1115\_interface.c@{ads1115\_interface.c}!ads1115\_delay\_ms@{ads1115\_delay\_ms}}
+\index{ads1115\_delay\_ms@{ads1115\_delay\_ms}!ads1115\_interface.c@{ads1115\_interface.c}}
+\doxysubsubsection{\texorpdfstring{ads1115\_delay\_ms()}{ads1115\_delay\_ms()}}
+{\footnotesize\ttfamily \label{ads1115__interface_8c_a751c154459a9f0111ddb695b5d57ba9e} 
+void ads1115\+\_\+delay\+\_\+ms (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{milliseconds}{}\end{DoxyParamCaption})}
+
+
+
+ADS1115 delay\+\_\+ms function (\doxylink{ads1115_8h_a2e82240ef42eb5a490b4cbc5f8e2d809}{ads1115\+\_\+delay\+\_\+ms\+\_\+t} callback) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em milliseconds} & Delay time in milliseconds \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{ads1115__interface_8c_source_l00024}{24}} of file \mbox{\hyperlink{ads1115__interface_8c_source}{ads1115\+\_\+interface.\+c}}.
+
+\Hypertarget{ads1115__interface_8c_aed91b8fad8db648d3f65acfe5424367e}\index{ads1115\_interface.c@{ads1115\_interface.c}!ads1115\_i2c\_read@{ads1115\_i2c\_read}}
+\index{ads1115\_i2c\_read@{ads1115\_i2c\_read}!ads1115\_interface.c@{ads1115\_interface.c}}
+\doxysubsubsection{\texorpdfstring{ads1115\_i2c\_read()}{ads1115\_i2c\_read()}}
+{\footnotesize\ttfamily \label{ads1115__interface_8c_aed91b8fad8db648d3f65acfe5424367e} 
+uint8\+\_\+t ads1115\+\_\+i2c\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{i2c\+\_\+addr}{, }\item[{uint8\+\_\+t}]{reg\+\_\+addr}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{uint16\+\_\+t}]{len}{}\end{DoxyParamCaption})}
+
+
+
+ADS1115 I2C read function (\doxylink{ads1115_8h_a3a0f1e6f2cfd94a667f605d8baead7ca}{ads1115\+\_\+i2c\+\_\+read\+\_\+t} callback) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i2c\+\_\+addr} & ADS1115 I2C address \\
+\hline
+{\em reg\+\_\+addr} & ADS1115 register address \\
+\hline
+{\em data} & Pointer to register value \\
+\hline
+{\em len} & Length of register value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{ads1115__interface_8c_source_l00017}{17}} of file \mbox{\hyperlink{ads1115__interface_8c_source}{ads1115\+\_\+interface.\+c}}.
+
+\Hypertarget{ads1115__interface_8c_a55e739173564587095e6deb3f2d2dc64}\index{ads1115\_interface.c@{ads1115\_interface.c}!ads1115\_i2c\_write@{ads1115\_i2c\_write}}
+\index{ads1115\_i2c\_write@{ads1115\_i2c\_write}!ads1115\_interface.c@{ads1115\_interface.c}}
+\doxysubsubsection{\texorpdfstring{ads1115\_i2c\_write()}{ads1115\_i2c\_write()}}
+{\footnotesize\ttfamily \label{ads1115__interface_8c_a55e739173564587095e6deb3f2d2dc64} 
+uint8\+\_\+t ads1115\+\_\+i2c\+\_\+write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{i2c\+\_\+addr}{, }\item[{uint8\+\_\+t}]{reg\+\_\+addr}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{uint16\+\_\+t}]{len}{}\end{DoxyParamCaption})}
+
+
+
+ADS1115 I2C write function (\doxylink{ads1115_8h_a7f92f74640465fba87e6c0594854f70a}{ads1115\+\_\+i2c\+\_\+write\+\_\+t} callback) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i2c\+\_\+addr} & ADS1115 I2C address \\
+\hline
+{\em reg\+\_\+addr} & ADS1115 register address \\
+\hline
+{\em data} & Pointer to register value \\
+\hline
+{\em len} & Length of register value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{ads1115__interface_8c_source_l00010}{10}} of file \mbox{\hyperlink{ads1115__interface_8c_source}{ads1115\+\_\+interface.\+c}}.
+
