@@ -1,0 +1,37 @@
+/**
+ * @mainpage ADS1115 Driver Documentation
+ * 
+ * @section intro_sec Introduction
+ * 
+ * This is a platform-independent C driver for the Texas Instruments ADS1115
+ * 16-bit ADC with I2C interface.
+ * 
+ * @section features_sec Features
+ * 
+ * - Platform-independent design
+ * - HAL abstraction via callbacks
+ * - Single-shot and continuous modes
+ * - Programmable gain (6 ranges)
+ * - Comparator support
+ * 
+ * @section usage_sec Usage
+ * 
+ * See @ref ads1115.h for full API documentation.
+ * 
+ * @section example_sec Example
+ * 
+ * @code
+ * ads1115_handle_t handle;
+ * adc.i2c_addr = ADS1115_ADDR_GND;
+ * adc.i2c_write = ads1115_i2c_write;
+ * adc.i2c_read = ads1115_i2c_read;
+ * adc.delay_ms = ads1115_delay_ms;
+ * adc.config = ADS1115_DEFAULT_CONFIGURATION;
+ * 
+ * ads1115_init(&handle);
+ * 
+ * int16_t raw;
+ * float voltage;
+ * ads1115_single_read(&adc, &raw, &voltage);
+ * @endcode
+ */

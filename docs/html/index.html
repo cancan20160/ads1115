@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ADS1115 Driver: Main Page</title>
+<title>ADS1115 Driver: ADS1115 Driver Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,10 +88,49 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">ADS1115 Driver Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">ADS1115 Driver Documentation </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="intro_sec"></a>
+Introduction</h1>
+<p>This is a platform-independent C driver for the Texas Instruments ADS1115 16-bit ADC with I2C interface.</p>
+<h1 class="doxsection"><a class="anchor" id="features_sec"></a>
+Features</h1>
+<ul>
+<li>Platform-independent design</li>
+<li>HAL abstraction via callbacks</li>
+<li>Single-shot and continuous modes</li>
+<li>Programmable gain (6 ranges)</li>
+<li>Comparator support</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="usage_sec"></a>
+Usage</h1>
+<p>See <a class="el" href="ads1115_8h.html">ads1115.h</a> for full API documentation.</p>
+<h1 class="doxsection"><a class="anchor" id="example_sec"></a>
+Example</h1>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="structads1115__handle__t.html">ads1115_handle_t</a> handle;</div>
+<div class="line">adc.<a class="code hl_variable" href="structads1115__handle__t.html#a1c0407b60cdfac013435d5c37f83bf8f">i2c_addr</a> = <a class="code hl_enumvalue" href="ads1115_8h.html#aefd45489aa6752769eec45984c273136ae00dba43251498783cde4bd77e0842d2">ADS1115_ADDR_GND</a>;</div>
+<div class="line">adc.i2c_write = <a class="code hl_function" href="ads1115__interface_8c.html#a55e739173564587095e6deb3f2d2dc64">ads1115_i2c_write</a>;</div>
+<div class="line">adc.i2c_read = <a class="code hl_function" href="ads1115__interface_8c.html#aed91b8fad8db648d3f65acfe5424367e">ads1115_i2c_read</a>;</div>
+<div class="line">adc.delay_ms = <a class="code hl_function" href="ads1115__interface_8c.html#a751c154459a9f0111ddb695b5d57ba9e">ads1115_delay_ms</a>;</div>
+<div class="line">adc.config = <a class="code hl_define" href="ads1115_8h.html#a9b80edff76d1b62f6efeb59d1eb875cf">ADS1115_DEFAULT_CONFIGURATION</a>;</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_function" href="ads1115_8c.html#aee310e8f432fb4d3e3ab8591fbee6a83">ads1115_init</a>(&amp;handle);</div>
+<div class="line"> </div>
+<div class="line">int16_t raw;</div>
+<div class="line"><span class="keywordtype">float</span> voltage;</div>
+<div class="line"><a class="code hl_function" href="ads1115_8c.html#a756f47a1a07ea1f5c1e5e5fd48905f69">ads1115_single_read</a>(&amp;adc, &amp;raw, &amp;voltage);</div>
+<div class="ttc" id="aads1115_8c_html_a756f47a1a07ea1f5c1e5e5fd48905f69"><div class="ttname"><a href="ads1115_8c.html#a756f47a1a07ea1f5c1e5e5fd48905f69">ads1115_single_read</a></div><div class="ttdeci">ads1115_error_t ads1115_single_read(ads1115_handle_t *handle, int16_t *adc_raw, float *voltage)</div><div class="ttdoc">Read adc result once.</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8c_source.html#l00347">ads1115.c:347</a></div></div>
+<div class="ttc" id="aads1115_8c_html_aee310e8f432fb4d3e3ab8591fbee6a83"><div class="ttname"><a href="ads1115_8c.html#aee310e8f432fb4d3e3ab8591fbee6a83">ads1115_init</a></div><div class="ttdeci">ads1115_error_t ads1115_init(ads1115_handle_t *handle)</div><div class="ttdoc">Initialize ADS1115 device.</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8c_source.html#l00175">ads1115.c:175</a></div></div>
+<div class="ttc" id="aads1115_8h_html_a9b80edff76d1b62f6efeb59d1eb875cf"><div class="ttname"><a href="ads1115_8h.html#a9b80edff76d1b62f6efeb59d1eb875cf">ADS1115_DEFAULT_CONFIGURATION</a></div><div class="ttdeci">#define ADS1115_DEFAULT_CONFIGURATION</div><div class="ttdoc">Default configuration values at compile time.</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00207">ads1115.h:207</a></div></div>
+<div class="ttc" id="aads1115_8h_html_aefd45489aa6752769eec45984c273136ae00dba43251498783cde4bd77e0842d2"><div class="ttname"><a href="ads1115_8h.html#aefd45489aa6752769eec45984c273136ae00dba43251498783cde4bd77e0842d2">ADS1115_ADDR_GND</a></div><div class="ttdeci">@ ADS1115_ADDR_GND</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00044">ads1115.h:44</a></div></div>
+<div class="ttc" id="aads1115__interface_8c_html_a55e739173564587095e6deb3f2d2dc64"><div class="ttname"><a href="ads1115__interface_8c.html#a55e739173564587095e6deb3f2d2dc64">ads1115_i2c_write</a></div><div class="ttdeci">uint8_t ads1115_i2c_write(uint8_t i2c_addr, uint8_t reg_addr, uint8_t *data, uint16_t len)</div><div class="ttdoc">ADS1115 I2C write function (ads1115_i2c_write_t callback)</div><div class="ttdef"><b>Definition</b> <a href="ads1115__interface_8c_source.html#l00010">ads1115_interface.c:10</a></div></div>
+<div class="ttc" id="aads1115__interface_8c_html_a751c154459a9f0111ddb695b5d57ba9e"><div class="ttname"><a href="ads1115__interface_8c.html#a751c154459a9f0111ddb695b5d57ba9e">ads1115_delay_ms</a></div><div class="ttdeci">void ads1115_delay_ms(uint32_t milliseconds)</div><div class="ttdoc">ADS1115 delay_ms function (ads1115_delay_ms_t callback)</div><div class="ttdef"><b>Definition</b> <a href="ads1115__interface_8c_source.html#l00024">ads1115_interface.c:24</a></div></div>
+<div class="ttc" id="aads1115__interface_8c_html_aed91b8fad8db648d3f65acfe5424367e"><div class="ttname"><a href="ads1115__interface_8c.html#aed91b8fad8db648d3f65acfe5424367e">ads1115_i2c_read</a></div><div class="ttdeci">uint8_t ads1115_i2c_read(uint8_t i2c_addr, uint8_t reg_addr, uint8_t *data, uint16_t len)</div><div class="ttdoc">ADS1115 I2C read function (ads1115_i2c_read_t callback)</div><div class="ttdef"><b>Definition</b> <a href="ads1115__interface_8c_source.html#l00017">ads1115_interface.c:17</a></div></div>
+<div class="ttc" id="astructads1115__handle__t_html"><div class="ttname"><a href="structads1115__handle__t.html">ads1115_handle_t</a></div><div class="ttdoc">ADS1115 device handle structure.</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00188">ads1115.h:188</a></div></div>
+<div class="ttc" id="astructads1115__handle__t_html_a1c0407b60cdfac013435d5c37f83bf8f"><div class="ttname"><a href="structads1115__handle__t.html#a1c0407b60cdfac013435d5c37f83bf8f">ads1115_handle_t::i2c_addr</a></div><div class="ttdeci">ads1115_i2c_addr_t i2c_addr</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00189">ads1115.h:189</a></div></div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->
