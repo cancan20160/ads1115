@@ -1,3 +1,10 @@
+/**
+ * @file ads1115.c
+ * @brief ADS1115 16-Bit ADC Driver Implementation
+ * @author Şükrü Can Kılıç
+ * @date 19.01.2026
+ */
+
 #include "ads1115.h"
 #include <stddef.h>
 

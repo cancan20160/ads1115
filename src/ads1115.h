@@ -1,3 +1,13 @@
+/**
+ * @file ads1115.h
+ * @brief ADS1115 16-Bit ADC Driver - Platform Independent
+ * @author Şükrü Can Kılıç
+ * @date 19.01.2026
+ * 
+ * Texas Instruments ADS1115 4-Channel 16-Bit ADC with I2C Interface
+ * Datasheet: https://www.ti.com/lit/ds/symlink/ads1115.pdf
+ */
+
 #ifndef ADS1115_H
 #define ADS1115_H
 
