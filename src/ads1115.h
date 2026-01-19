@@ -243,7 +243,7 @@ ads1115_error_t ads1115_set_range(ads1115_handle_t *handle, ads1115_range_t rang
  * @param range Maximum voltage range
  * @return ads1115_error_t Error code
  */
-ads1115_error_t ads1115_get_range(ads1115_handle_t *handle, ads1115_range_t range);
+ads1115_error_t ads1115_get_range(ads1115_handle_t *handle, ads1115_range_t *range);
 
 /**
  * @brief Set adc data sample rate
@@ -261,7 +261,7 @@ ads1115_error_t ads1115_set_data_rate(ads1115_handle_t *handle, ads1115_data_rat
  * @param data_rate Data rate setting
  * @return ads1115_error_t Error code
  */
-ads1115_error_t ads1115_get_data_rate(ads1115_handle_t *handle, ads1115_data_rate_t data_rate);
+ads1115_error_t ads1115_get_data_rate(ads1115_handle_t *handle, ads1115_data_rate_t *data_rate);
 
 /**
  * @brief Start adc continuous conversion mode
