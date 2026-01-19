@@ -1,0 +1,142 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}ads1115\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Member Data Documentation}{5}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}comp\_latch}{5}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}comp\_mode}{6}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}comp\_pol}{6}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}comp\_queue}{6}{subsubsection.3.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}data\_rate}{6}{subsubsection.3.1.2.5}%
+\contentsline {subsubsection}{\numberline {3.1.2.6}high\_threshold}{6}{subsubsection.3.1.2.6}%
+\contentsline {subsubsection}{\numberline {3.1.2.7}low\_threshold}{6}{subsubsection.3.1.2.7}%
+\contentsline {subsubsection}{\numberline {3.1.2.8}mode}{7}{subsubsection.3.1.2.8}%
+\contentsline {subsubsection}{\numberline {3.1.2.9}mux}{7}{subsubsection.3.1.2.9}%
+\contentsline {subsubsection}{\numberline {3.1.2.10}range}{7}{subsubsection.3.1.2.10}%
+\contentsline {section}{\numberline {3.2}ads1115\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handle\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Member Data Documentation}{8}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}config}{8}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}delay\_ms}{8}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}i2c\_addr}{8}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}i2c\_read}{8}{subsubsection.3.2.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.2.5}i2c\_write}{8}{subsubsection.3.2.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.2.6}is\_initialized}{8}{subsubsection.3.2.2.6}%
+\contentsline {chapter}{\numberline {4}File Documentation}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}interface/ads1115\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.c File Reference}{9}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{9}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{9}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}ads1115\_delay\_ms()}{9}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}ads1115\_i2c\_read()}{10}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}ads1115\_i2c\_write()}{10}{subsubsection.4.1.2.3}%
+\contentsline {section}{\numberline {4.2}ads1115\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}interface/ads1115\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{11}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{11}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Function Documentation}{11}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}ads1115\_delay\_ms()}{11}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}ads1115\_i2c\_read()}{12}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}ads1115\_i2c\_write()}{12}{subsubsection.4.3.2.3}%
+\contentsline {section}{\numberline {4.4}ads1115\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{13}{section.4.4}%
+\contentsline {section}{\numberline {4.5}src/ads1115.c File Reference}{13}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{15}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Macro Definition Documentation}{15}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}ADS1115\_COMP\_LAT\_MASK}{15}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}ADS1115\_COMP\_LAT\_SHIFT}{15}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}ADS1115\_COMP\_MODE\_MASK}{15}{subsubsection.4.5.2.3}%
+\contentsline {subsubsection}{\numberline {4.5.2.4}ADS1115\_COMP\_MODE\_SHIFT}{15}{subsubsection.4.5.2.4}%
+\contentsline {subsubsection}{\numberline {4.5.2.5}ADS1115\_COMP\_POL\_MASK}{16}{subsubsection.4.5.2.5}%
+\contentsline {subsubsection}{\numberline {4.5.2.6}ADS1115\_COMP\_POL\_SHIFT}{16}{subsubsection.4.5.2.6}%
+\contentsline {subsubsection}{\numberline {4.5.2.7}ADS1115\_COMP\_QUE\_MASK}{16}{subsubsection.4.5.2.7}%
+\contentsline {subsubsection}{\numberline {4.5.2.8}ADS1115\_COMP\_QUE\_SHIFT}{16}{subsubsection.4.5.2.8}%
+\contentsline {subsubsection}{\numberline {4.5.2.9}ADS1115\_DR\_MASK}{16}{subsubsection.4.5.2.9}%
+\contentsline {subsubsection}{\numberline {4.5.2.10}ADS1115\_DR\_SHIFT}{16}{subsubsection.4.5.2.10}%
+\contentsline {subsubsection}{\numberline {4.5.2.11}ADS1115\_MAX\_VALUE}{16}{subsubsection.4.5.2.11}%
+\contentsline {subsubsection}{\numberline {4.5.2.12}ADS1115\_MIN\_VALUE}{16}{subsubsection.4.5.2.12}%
+\contentsline {subsubsection}{\numberline {4.5.2.13}ADS1115\_MODE\_MASK}{17}{subsubsection.4.5.2.13}%
+\contentsline {subsubsection}{\numberline {4.5.2.14}ADS1115\_MODE\_SHIFT}{17}{subsubsection.4.5.2.14}%
+\contentsline {subsubsection}{\numberline {4.5.2.15}ADS1115\_MUX\_MASK}{17}{subsubsection.4.5.2.15}%
+\contentsline {subsubsection}{\numberline {4.5.2.16}ADS1115\_MUX\_SHIFT}{17}{subsubsection.4.5.2.16}%
+\contentsline {subsubsection}{\numberline {4.5.2.17}ADS1115\_OS\_IDLE}{17}{subsubsection.4.5.2.17}%
+\contentsline {subsubsection}{\numberline {4.5.2.18}ADS1115\_OS\_MASK}{17}{subsubsection.4.5.2.18}%
+\contentsline {subsubsection}{\numberline {4.5.2.19}ADS1115\_OS\_SHIFT}{17}{subsubsection.4.5.2.19}%
+\contentsline {subsubsection}{\numberline {4.5.2.20}ADS1115\_OS\_START\_SINGLE}{17}{subsubsection.4.5.2.20}%
+\contentsline {subsubsection}{\numberline {4.5.2.21}ADS1115\_PGA\_MASK}{18}{subsubsection.4.5.2.21}%
+\contentsline {subsubsection}{\numberline {4.5.2.22}ADS1115\_PGA\_SHIFT}{18}{subsubsection.4.5.2.22}%
+\contentsline {subsubsection}{\numberline {4.5.2.23}ADS1115\_REG\_CONFIG}{18}{subsubsection.4.5.2.23}%
+\contentsline {subsubsection}{\numberline {4.5.2.24}ADS1115\_REG\_CONVERSION}{18}{subsubsection.4.5.2.24}%
+\contentsline {subsubsection}{\numberline {4.5.2.25}ADS1115\_REG\_HI\_THRESH}{18}{subsubsection.4.5.2.25}%
+\contentsline {subsubsection}{\numberline {4.5.2.26}ADS1115\_REG\_LO\_THRESH}{18}{subsubsection.4.5.2.26}%
+\contentsline {subsection}{\numberline {4.5.3}Function Documentation}{18}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}ads1115\_continuous\_conversion\_read()}{18}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}ads1115\_continuous\_conversion\_start()}{19}{subsubsection.4.5.3.2}%
+\contentsline {subsubsection}{\numberline {4.5.3.3}ads1115\_continuous\_conversion\_stop()}{19}{subsubsection.4.5.3.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.4}ads1115\_deinit()}{19}{subsubsection.4.5.3.4}%
+\contentsline {subsubsection}{\numberline {4.5.3.5}ads1115\_get\_channel()}{20}{subsubsection.4.5.3.5}%
+\contentsline {subsubsection}{\numberline {4.5.3.6}ads1115\_get\_compare\_alert()}{20}{subsubsection.4.5.3.6}%
+\contentsline {subsubsection}{\numberline {4.5.3.7}ads1115\_get\_compare\_latch()}{20}{subsubsection.4.5.3.7}%
+\contentsline {subsubsection}{\numberline {4.5.3.8}ads1115\_get\_compare\_mode()}{21}{subsubsection.4.5.3.8}%
+\contentsline {subsubsection}{\numberline {4.5.3.9}ads1115\_get\_compare\_queue()}{21}{subsubsection.4.5.3.9}%
+\contentsline {subsubsection}{\numberline {4.5.3.10}ads1115\_get\_compare\_threshold()}{21}{subsubsection.4.5.3.10}%
+\contentsline {subsubsection}{\numberline {4.5.3.11}ads1115\_get\_data\_rate()}{22}{subsubsection.4.5.3.11}%
+\contentsline {subsubsection}{\numberline {4.5.3.12}ads1115\_get\_range()}{22}{subsubsection.4.5.3.12}%
+\contentsline {subsubsection}{\numberline {4.5.3.13}ads1115\_init()}{22}{subsubsection.4.5.3.13}%
+\contentsline {subsubsection}{\numberline {4.5.3.14}ads1115\_is\_ready()}{23}{subsubsection.4.5.3.14}%
+\contentsline {subsubsection}{\numberline {4.5.3.15}ads1115\_set\_channel()}{23}{subsubsection.4.5.3.15}%
+\contentsline {subsubsection}{\numberline {4.5.3.16}ads1115\_set\_compare\_alert()}{23}{subsubsection.4.5.3.16}%
+\contentsline {subsubsection}{\numberline {4.5.3.17}ads1115\_set\_compare\_latch()}{24}{subsubsection.4.5.3.17}%
+\contentsline {subsubsection}{\numberline {4.5.3.18}ads1115\_set\_compare\_mode()}{24}{subsubsection.4.5.3.18}%
+\contentsline {subsubsection}{\numberline {4.5.3.19}ads1115\_set\_compare\_queue()}{24}{subsubsection.4.5.3.19}%
+\contentsline {subsubsection}{\numberline {4.5.3.20}ads1115\_set\_compare\_threshold()}{25}{subsubsection.4.5.3.20}%
+\contentsline {subsubsection}{\numberline {4.5.3.21}ads1115\_set\_data\_rate()}{25}{subsubsection.4.5.3.21}%
+\contentsline {subsubsection}{\numberline {4.5.3.22}ads1115\_set\_range()}{25}{subsubsection.4.5.3.22}%
+\contentsline {subsubsection}{\numberline {4.5.3.23}ads1115\_single\_read()}{26}{subsubsection.4.5.3.23}%
+\contentsline {section}{\numberline {4.6}ads1115.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{26}{section.4.6}%
+\contentsline {section}{\numberline {4.7}src/ads1115.h File Reference}{34}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{37}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Macro Definition Documentation}{37}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}ADS1115\_DEFAULT\_CONFIGURATION}{37}{subsubsection.4.7.2.1}%
+\contentsline {subsection}{\numberline {4.7.3}Typedef Documentation}{37}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}ads1115\_delay\_ms\_t}{37}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}ads1115\_i2c\_read\_t}{38}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}ads1115\_i2c\_write\_t}{38}{subsubsection.4.7.3.3}%
+\contentsline {subsection}{\numberline {4.7.4}Enumeration Type Documentation}{38}{subsection.4.7.4}%
+\contentsline {subsubsection}{\numberline {4.7.4.1}ads1115\_comp\_latch\_t}{38}{subsubsection.4.7.4.1}%
+\contentsline {subsubsection}{\numberline {4.7.4.2}ads1115\_comp\_mode\_t}{39}{subsubsection.4.7.4.2}%
+\contentsline {subsubsection}{\numberline {4.7.4.3}ads1115\_comp\_polarity\_t}{39}{subsubsection.4.7.4.3}%
+\contentsline {subsubsection}{\numberline {4.7.4.4}ads1115\_comp\_queue\_t}{39}{subsubsection.4.7.4.4}%
+\contentsline {subsubsection}{\numberline {4.7.4.5}ads1115\_data\_rate\_t}{39}{subsubsection.4.7.4.5}%
+\contentsline {subsubsection}{\numberline {4.7.4.6}ads1115\_error\_t}{40}{subsubsection.4.7.4.6}%
+\contentsline {subsubsection}{\numberline {4.7.4.7}ads1115\_i2c\_addr\_t}{40}{subsubsection.4.7.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.4.8}ads1115\_mode\_t}{40}{subsubsection.4.7.4.8}%
+\contentsline {subsubsection}{\numberline {4.7.4.9}ads1115\_mux\_t}{41}{subsubsection.4.7.4.9}%
+\contentsline {subsubsection}{\numberline {4.7.4.10}ads1115\_range\_t}{41}{subsubsection.4.7.4.10}%
+\contentsline {subsection}{\numberline {4.7.5}Function Documentation}{41}{subsection.4.7.5}%
+\contentsline {subsubsection}{\numberline {4.7.5.1}ads1115\_continuous\_conversion\_read()}{41}{subsubsection.4.7.5.1}%
+\contentsline {subsubsection}{\numberline {4.7.5.2}ads1115\_continuous\_conversion\_start()}{42}{subsubsection.4.7.5.2}%
+\contentsline {subsubsection}{\numberline {4.7.5.3}ads1115\_continuous\_conversion\_stop()}{42}{subsubsection.4.7.5.3}%
+\contentsline {subsubsection}{\numberline {4.7.5.4}ads1115\_deinit()}{42}{subsubsection.4.7.5.4}%
+\contentsline {subsubsection}{\numberline {4.7.5.5}ads1115\_get\_channel()}{43}{subsubsection.4.7.5.5}%
+\contentsline {subsubsection}{\numberline {4.7.5.6}ads1115\_get\_compare\_alert()}{43}{subsubsection.4.7.5.6}%
+\contentsline {subsubsection}{\numberline {4.7.5.7}ads1115\_get\_compare\_latch()}{43}{subsubsection.4.7.5.7}%
+\contentsline {subsubsection}{\numberline {4.7.5.8}ads1115\_get\_compare\_mode()}{44}{subsubsection.4.7.5.8}%
+\contentsline {subsubsection}{\numberline {4.7.5.9}ads1115\_get\_compare\_queue()}{44}{subsubsection.4.7.5.9}%
+\contentsline {subsubsection}{\numberline {4.7.5.10}ads1115\_get\_compare\_threshold()}{44}{subsubsection.4.7.5.10}%
+\contentsline {subsubsection}{\numberline {4.7.5.11}ads1115\_get\_data\_rate()}{45}{subsubsection.4.7.5.11}%
+\contentsline {subsubsection}{\numberline {4.7.5.12}ads1115\_get\_range()}{45}{subsubsection.4.7.5.12}%
+\contentsline {subsubsection}{\numberline {4.7.5.13}ads1115\_init()}{45}{subsubsection.4.7.5.13}%
+\contentsline {subsubsection}{\numberline {4.7.5.14}ads1115\_is\_ready()}{46}{subsubsection.4.7.5.14}%
+\contentsline {subsubsection}{\numberline {4.7.5.15}ads1115\_set\_channel()}{46}{subsubsection.4.7.5.15}%
+\contentsline {subsubsection}{\numberline {4.7.5.16}ads1115\_set\_compare\_alert()}{46}{subsubsection.4.7.5.16}%
+\contentsline {subsubsection}{\numberline {4.7.5.17}ads1115\_set\_compare\_latch()}{47}{subsubsection.4.7.5.17}%
+\contentsline {subsubsection}{\numberline {4.7.5.18}ads1115\_set\_compare\_mode()}{47}{subsubsection.4.7.5.18}%
+\contentsline {subsubsection}{\numberline {4.7.5.19}ads1115\_set\_compare\_queue()}{47}{subsubsection.4.7.5.19}%
+\contentsline {subsubsection}{\numberline {4.7.5.20}ads1115\_set\_compare\_threshold()}{48}{subsubsection.4.7.5.20}%
+\contentsline {subsubsection}{\numberline {4.7.5.21}ads1115\_set\_data\_rate()}{48}{subsubsection.4.7.5.21}%
+\contentsline {subsubsection}{\numberline {4.7.5.22}ads1115\_set\_range()}{48}{subsubsection.4.7.5.22}%
+\contentsline {subsubsection}{\numberline {4.7.5.23}ads1115\_single\_read()}{49}{subsubsection.4.7.5.23}%
+\contentsline {section}{\numberline {4.8}ads1115.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{49}{section.4.8}%
+\contentsline {chapter}{Index}{53}{section*.12}%

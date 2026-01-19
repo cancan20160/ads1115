@@ -1,0 +1,475 @@
+\begin{theindex}
+
+  \item {ads1115.c}
+    \subitem {ADS1115\_COMP\_LAT\_MASK}, \hyperpage{15}
+    \subitem {ADS1115\_COMP\_LAT\_SHIFT}, \hyperpage{15}
+    \subitem {ADS1115\_COMP\_MODE\_MASK}, \hyperpage{15}
+    \subitem {ADS1115\_COMP\_MODE\_SHIFT}, \hyperpage{15}
+    \subitem {ADS1115\_COMP\_POL\_MASK}, \hyperpage{15}
+    \subitem {ADS1115\_COMP\_POL\_SHIFT}, \hyperpage{16}
+    \subitem {ADS1115\_COMP\_QUE\_MASK}, \hyperpage{16}
+    \subitem {ADS1115\_COMP\_QUE\_SHIFT}, \hyperpage{16}
+    \subitem {ads1115\_continuous\_conversion\_read}, \hyperpage{18}
+    \subitem {ads1115\_continuous\_conversion\_start}, \hyperpage{19}
+    \subitem {ads1115\_continuous\_conversion\_stop}, \hyperpage{19}
+    \subitem {ads1115\_deinit}, \hyperpage{19}
+    \subitem {ADS1115\_DR\_MASK}, \hyperpage{16}
+    \subitem {ADS1115\_DR\_SHIFT}, \hyperpage{16}
+    \subitem {ads1115\_get\_channel}, \hyperpage{20}
+    \subitem {ads1115\_get\_compare\_alert}, \hyperpage{20}
+    \subitem {ads1115\_get\_compare\_latch}, \hyperpage{20}
+    \subitem {ads1115\_get\_compare\_mode}, \hyperpage{21}
+    \subitem {ads1115\_get\_compare\_queue}, \hyperpage{21}
+    \subitem {ads1115\_get\_compare\_threshold}, \hyperpage{21}
+    \subitem {ads1115\_get\_data\_rate}, \hyperpage{22}
+    \subitem {ads1115\_get\_range}, \hyperpage{22}
+    \subitem {ads1115\_init}, \hyperpage{22}
+    \subitem {ads1115\_is\_ready}, \hyperpage{23}
+    \subitem {ADS1115\_MAX\_VALUE}, \hyperpage{16}
+    \subitem {ADS1115\_MIN\_VALUE}, \hyperpage{16}
+    \subitem {ADS1115\_MODE\_MASK}, \hyperpage{16}
+    \subitem {ADS1115\_MODE\_SHIFT}, \hyperpage{17}
+    \subitem {ADS1115\_MUX\_MASK}, \hyperpage{17}
+    \subitem {ADS1115\_MUX\_SHIFT}, \hyperpage{17}
+    \subitem {ADS1115\_OS\_IDLE}, \hyperpage{17}
+    \subitem {ADS1115\_OS\_MASK}, \hyperpage{17}
+    \subitem {ADS1115\_OS\_SHIFT}, \hyperpage{17}
+    \subitem {ADS1115\_OS\_START\_SINGLE}, \hyperpage{17}
+    \subitem {ADS1115\_PGA\_MASK}, \hyperpage{17}
+    \subitem {ADS1115\_PGA\_SHIFT}, \hyperpage{18}
+    \subitem {ADS1115\_REG\_CONFIG}, \hyperpage{18}
+    \subitem {ADS1115\_REG\_CONVERSION}, \hyperpage{18}
+    \subitem {ADS1115\_REG\_HI\_THRESH}, \hyperpage{18}
+    \subitem {ADS1115\_REG\_LO\_THRESH}, \hyperpage{18}
+    \subitem {ads1115\_set\_channel}, \hyperpage{23}
+    \subitem {ads1115\_set\_compare\_alert}, \hyperpage{23}
+    \subitem {ads1115\_set\_compare\_latch}, \hyperpage{24}
+    \subitem {ads1115\_set\_compare\_mode}, \hyperpage{24}
+    \subitem {ads1115\_set\_compare\_queue}, \hyperpage{24}
+    \subitem {ads1115\_set\_compare\_threshold}, \hyperpage{25}
+    \subitem {ads1115\_set\_data\_rate}, \hyperpage{25}
+    \subitem {ads1115\_set\_range}, \hyperpage{25}
+    \subitem {ads1115\_single\_read}, \hyperpage{26}
+  \item {ads1115.h}
+    \subitem {ADS1115\_ADDR\_GND}, \hyperpage{40}
+    \subitem {ADS1115\_ADDR\_SCL}, \hyperpage{40}
+    \subitem {ADS1115\_ADDR\_SDA}, \hyperpage{40}
+    \subitem {ADS1115\_ADDR\_VDD}, \hyperpage{40}
+    \subitem {ADS1115\_COMP\_LAT\_LATCHING}, \hyperpage{39}
+    \subitem {ADS1115\_COMP\_LAT\_NON\_LATCHING}, \hyperpage{39}
+    \subitem {ads1115\_comp\_latch\_t}, \hyperpage{38}
+    \subitem {ads1115\_comp\_mode\_t}, \hyperpage{39}
+    \subitem {ADS1115\_COMP\_MODE\_TRADITIONAL}, \hyperpage{39}
+    \subitem {ADS1115\_COMP\_MODE\_WINDOW}, \hyperpage{39}
+    \subitem {ADS1115\_COMP\_POL\_ACTIVE\_HIGH}, \hyperpage{39}
+    \subitem {ADS1115\_COMP\_POL\_ACTIVE\_LOW}, \hyperpage{39}
+    \subitem {ads1115\_comp\_polarity\_t}, \hyperpage{39}
+    \subitem {ADS1115\_COMP\_QUE\_1\_CONV}, \hyperpage{39}
+    \subitem {ADS1115\_COMP\_QUE\_2\_CONV}, \hyperpage{39}
+    \subitem {ADS1115\_COMP\_QUE\_4\_CONV}, \hyperpage{39}
+    \subitem {ADS1115\_COMP\_QUE\_DISABLE}, \hyperpage{39}
+    \subitem {ads1115\_comp\_queue\_t}, \hyperpage{39}
+    \subitem {ads1115\_continuous\_conversion\_read}, \hyperpage{41}
+    \subitem {ads1115\_continuous\_conversion\_start}, \hyperpage{42}
+    \subitem {ads1115\_continuous\_conversion\_stop}, \hyperpage{42}
+    \subitem {ads1115\_data\_rate\_t}, \hyperpage{39}
+    \subitem {ADS1115\_DEFAULT\_CONFIGURATION}, \hyperpage{37}
+    \subitem {ads1115\_deinit}, \hyperpage{42}
+    \subitem {ads1115\_delay\_ms\_t}, \hyperpage{37}
+    \subitem {ADS1115\_DR\_128\_SPS}, \hyperpage{40}
+    \subitem {ADS1115\_DR\_16\_SPS}, \hyperpage{40}
+    \subitem {ADS1115\_DR\_250\_SPS}, \hyperpage{40}
+    \subitem {ADS1115\_DR\_32\_SPS}, \hyperpage{40}
+    \subitem {ADS1115\_DR\_475\_SPS}, \hyperpage{40}
+    \subitem {ADS1115\_DR\_64\_SPS}, \hyperpage{40}
+    \subitem {ADS1115\_DR\_860\_SPS}, \hyperpage{40}
+    \subitem {ADS1115\_DR\_8\_SPS}, \hyperpage{40}
+    \subitem {ADS1115\_ERROR\_CONVERSION\_BUSY}, \hyperpage{40}
+    \subitem {ADS1115\_ERROR\_I2C\_READ}, \hyperpage{40}
+    \subitem {ADS1115\_ERROR\_I2C\_WRITE}, \hyperpage{40}
+    \subitem {ADS1115\_ERROR\_INVALID\_PARAM}, \hyperpage{40}
+    \subitem {ADS1115\_ERROR\_NOT\_INITIALIZED}, \hyperpage{40}
+    \subitem {ADS1115\_ERROR\_NULL\_POINTER}, \hyperpage{40}
+    \subitem {ads1115\_error\_t}, \hyperpage{40}
+    \subitem {ADS1115\_ERROR\_TIMEOUT}, \hyperpage{40}
+    \subitem {ads1115\_get\_channel}, \hyperpage{43}
+    \subitem {ads1115\_get\_compare\_alert}, \hyperpage{43}
+    \subitem {ads1115\_get\_compare\_latch}, \hyperpage{43}
+    \subitem {ads1115\_get\_compare\_mode}, \hyperpage{44}
+    \subitem {ads1115\_get\_compare\_queue}, \hyperpage{44}
+    \subitem {ads1115\_get\_compare\_threshold}, \hyperpage{44}
+    \subitem {ads1115\_get\_data\_rate}, \hyperpage{45}
+    \subitem {ads1115\_get\_range}, \hyperpage{45}
+    \subitem {ads1115\_i2c\_addr\_t}, \hyperpage{40}
+    \subitem {ads1115\_i2c\_read\_t}, \hyperpage{38}
+    \subitem {ads1115\_i2c\_write\_t}, \hyperpage{38}
+    \subitem {ads1115\_init}, \hyperpage{45}
+    \subitem {ads1115\_is\_ready}, \hyperpage{46}
+    \subitem {ADS1115\_MODE\_CONTINUOUS}, \hyperpage{41}
+    \subitem {ADS1115\_MODE\_SINGLE\_SHOT}, \hyperpage{41}
+    \subitem {ads1115\_mode\_t}, \hyperpage{40}
+    \subitem {ADS1115\_MUX\_AIN0\_AIN1}, \hyperpage{41}
+    \subitem {ADS1115\_MUX\_AIN0\_AIN3}, \hyperpage{41}
+    \subitem {ADS1115\_MUX\_AIN0\_GND}, \hyperpage{41}
+    \subitem {ADS1115\_MUX\_AIN1\_AIN3}, \hyperpage{41}
+    \subitem {ADS1115\_MUX\_AIN1\_GND}, \hyperpage{41}
+    \subitem {ADS1115\_MUX\_AIN2\_AIN3}, \hyperpage{41}
+    \subitem {ADS1115\_MUX\_AIN2\_GND}, \hyperpage{41}
+    \subitem {ADS1115\_MUX\_AIN3\_GND}, \hyperpage{41}
+    \subitem {ads1115\_mux\_t}, \hyperpage{41}
+    \subitem {ADS1115\_OK}, \hyperpage{40}
+    \subitem {ADS1115\_RANGE\_0V256}, \hyperpage{41}
+    \subitem {ADS1115\_RANGE\_0V512}, \hyperpage{41}
+    \subitem {ADS1115\_RANGE\_1V024}, \hyperpage{41}
+    \subitem {ADS1115\_RANGE\_2V048}, \hyperpage{41}
+    \subitem {ADS1115\_RANGE\_4V096}, \hyperpage{41}
+    \subitem {ADS1115\_RANGE\_6V144}, \hyperpage{41}
+    \subitem {ads1115\_range\_t}, \hyperpage{41}
+    \subitem {ads1115\_set\_channel}, \hyperpage{46}
+    \subitem {ads1115\_set\_compare\_alert}, \hyperpage{46}
+    \subitem {ads1115\_set\_compare\_latch}, \hyperpage{47}
+    \subitem {ads1115\_set\_compare\_mode}, \hyperpage{47}
+    \subitem {ads1115\_set\_compare\_queue}, \hyperpage{47}
+    \subitem {ads1115\_set\_compare\_threshold}, \hyperpage{48}
+    \subitem {ads1115\_set\_data\_rate}, \hyperpage{48}
+    \subitem {ads1115\_set\_range}, \hyperpage{48}
+    \subitem {ads1115\_single\_read}, \hyperpage{49}
+  \item {ADS1115\_ADDR\_GND}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_ADDR\_SCL}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_ADDR\_SDA}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_ADDR\_VDD}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_COMP\_LAT\_LATCHING}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_LAT\_MASK}
+    \subitem {ads1115.c}, \hyperpage{15}
+  \item {ADS1115\_COMP\_LAT\_NON\_LATCHING}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_LAT\_SHIFT}
+    \subitem {ads1115.c}, \hyperpage{15}
+  \item {ads1115\_comp\_latch\_t}
+    \subitem {ads1115.h}, \hyperpage{38}
+  \item {ADS1115\_COMP\_MODE\_MASK}
+    \subitem {ads1115.c}, \hyperpage{15}
+  \item {ADS1115\_COMP\_MODE\_SHIFT}
+    \subitem {ads1115.c}, \hyperpage{15}
+  \item {ads1115\_comp\_mode\_t}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_MODE\_TRADITIONAL}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_MODE\_WINDOW}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_POL\_ACTIVE\_HIGH}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_POL\_ACTIVE\_LOW}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_POL\_MASK}
+    \subitem {ads1115.c}, \hyperpage{15}
+  \item {ADS1115\_COMP\_POL\_SHIFT}
+    \subitem {ads1115.c}, \hyperpage{16}
+  \item {ads1115\_comp\_polarity\_t}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_QUE\_1\_CONV}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_QUE\_2\_CONV}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_QUE\_4\_CONV}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_QUE\_DISABLE}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_COMP\_QUE\_MASK}
+    \subitem {ads1115.c}, \hyperpage{16}
+  \item {ADS1115\_COMP\_QUE\_SHIFT}
+    \subitem {ads1115.c}, \hyperpage{16}
+  \item {ads1115\_comp\_queue\_t}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ads1115\_config\_t}, \hyperpage{5}
+    \subitem {comp\_latch}, \hyperpage{5}
+    \subitem {comp\_mode}, \hyperpage{5}
+    \subitem {comp\_pol}, \hyperpage{6}
+    \subitem {comp\_queue}, \hyperpage{6}
+    \subitem {data\_rate}, \hyperpage{6}
+    \subitem {high\_threshold}, \hyperpage{6}
+    \subitem {low\_threshold}, \hyperpage{6}
+    \subitem {mode}, \hyperpage{6}
+    \subitem {mux}, \hyperpage{7}
+    \subitem {range}, \hyperpage{7}
+  \item {ads1115\_continuous\_conversion\_read}
+    \subitem {ads1115.c}, \hyperpage{18}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ads1115\_continuous\_conversion\_start}
+    \subitem {ads1115.c}, \hyperpage{19}
+    \subitem {ads1115.h}, \hyperpage{42}
+  \item {ads1115\_continuous\_conversion\_stop}
+    \subitem {ads1115.c}, \hyperpage{19}
+    \subitem {ads1115.h}, \hyperpage{42}
+  \item {ads1115\_data\_rate\_t}
+    \subitem {ads1115.h}, \hyperpage{39}
+  \item {ADS1115\_DEFAULT\_CONFIGURATION}
+    \subitem {ads1115.h}, \hyperpage{37}
+  \item {ads1115\_deinit}
+    \subitem {ads1115.c}, \hyperpage{19}
+    \subitem {ads1115.h}, \hyperpage{42}
+  \item {ads1115\_delay\_ms}
+    \subitem {ads1115\_interface.c}, \hyperpage{9}
+    \subitem {ads1115\_interface.h}, \hyperpage{11}
+  \item {ads1115\_delay\_ms\_t}
+    \subitem {ads1115.h}, \hyperpage{37}
+  \item {ADS1115\_DR\_128\_SPS}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_DR\_16\_SPS}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_DR\_250\_SPS}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_DR\_32\_SPS}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_DR\_475\_SPS}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_DR\_64\_SPS}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_DR\_860\_SPS}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_DR\_8\_SPS}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_DR\_MASK}
+    \subitem {ads1115.c}, \hyperpage{16}
+  \item {ADS1115\_DR\_SHIFT}
+    \subitem {ads1115.c}, \hyperpage{16}
+  \item {ADS1115\_ERROR\_CONVERSION\_BUSY}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_ERROR\_I2C\_READ}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_ERROR\_I2C\_WRITE}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_ERROR\_INVALID\_PARAM}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_ERROR\_NOT\_INITIALIZED}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_ERROR\_NULL\_POINTER}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ads1115\_error\_t}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_ERROR\_TIMEOUT}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ads1115\_get\_channel}
+    \subitem {ads1115.c}, \hyperpage{20}
+    \subitem {ads1115.h}, \hyperpage{43}
+  \item {ads1115\_get\_compare\_alert}
+    \subitem {ads1115.c}, \hyperpage{20}
+    \subitem {ads1115.h}, \hyperpage{43}
+  \item {ads1115\_get\_compare\_latch}
+    \subitem {ads1115.c}, \hyperpage{20}
+    \subitem {ads1115.h}, \hyperpage{43}
+  \item {ads1115\_get\_compare\_mode}
+    \subitem {ads1115.c}, \hyperpage{21}
+    \subitem {ads1115.h}, \hyperpage{44}
+  \item {ads1115\_get\_compare\_queue}
+    \subitem {ads1115.c}, \hyperpage{21}
+    \subitem {ads1115.h}, \hyperpage{44}
+  \item {ads1115\_get\_compare\_threshold}
+    \subitem {ads1115.c}, \hyperpage{21}
+    \subitem {ads1115.h}, \hyperpage{44}
+  \item {ads1115\_get\_data\_rate}
+    \subitem {ads1115.c}, \hyperpage{22}
+    \subitem {ads1115.h}, \hyperpage{45}
+  \item {ads1115\_get\_range}
+    \subitem {ads1115.c}, \hyperpage{22}
+    \subitem {ads1115.h}, \hyperpage{45}
+  \item {ads1115\_handle\_t}, \hyperpage{7}
+    \subitem {config}, \hyperpage{8}
+    \subitem {delay\_ms}, \hyperpage{8}
+    \subitem {i2c\_addr}, \hyperpage{8}
+    \subitem {i2c\_read}, \hyperpage{8}
+    \subitem {i2c\_write}, \hyperpage{8}
+    \subitem {is\_initialized}, \hyperpage{8}
+  \item {ads1115\_i2c\_addr\_t}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ads1115\_i2c\_read}
+    \subitem {ads1115\_interface.c}, \hyperpage{10}
+    \subitem {ads1115\_interface.h}, \hyperpage{12}
+  \item {ads1115\_i2c\_read\_t}
+    \subitem {ads1115.h}, \hyperpage{38}
+  \item {ads1115\_i2c\_write}
+    \subitem {ads1115\_interface.c}, \hyperpage{10}
+    \subitem {ads1115\_interface.h}, \hyperpage{12}
+  \item {ads1115\_i2c\_write\_t}
+    \subitem {ads1115.h}, \hyperpage{38}
+  \item {ads1115\_init}
+    \subitem {ads1115.c}, \hyperpage{22}
+    \subitem {ads1115.h}, \hyperpage{45}
+  \item {ads1115\_interface.c}
+    \subitem {ads1115\_delay\_ms}, \hyperpage{9}
+    \subitem {ads1115\_i2c\_read}, \hyperpage{10}
+    \subitem {ads1115\_i2c\_write}, \hyperpage{10}
+  \item {ads1115\_interface.h}
+    \subitem {ads1115\_delay\_ms}, \hyperpage{11}
+    \subitem {ads1115\_i2c\_read}, \hyperpage{12}
+    \subitem {ads1115\_i2c\_write}, \hyperpage{12}
+  \item {ads1115\_is\_ready}
+    \subitem {ads1115.c}, \hyperpage{23}
+    \subitem {ads1115.h}, \hyperpage{46}
+  \item {ADS1115\_MAX\_VALUE}
+    \subitem {ads1115.c}, \hyperpage{16}
+  \item {ADS1115\_MIN\_VALUE}
+    \subitem {ads1115.c}, \hyperpage{16}
+  \item {ADS1115\_MODE\_CONTINUOUS}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_MODE\_MASK}
+    \subitem {ads1115.c}, \hyperpage{16}
+  \item {ADS1115\_MODE\_SHIFT}
+    \subitem {ads1115.c}, \hyperpage{17}
+  \item {ADS1115\_MODE\_SINGLE\_SHOT}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ads1115\_mode\_t}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_MUX\_AIN0\_AIN1}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_MUX\_AIN0\_AIN3}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_MUX\_AIN0\_GND}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_MUX\_AIN1\_AIN3}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_MUX\_AIN1\_GND}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_MUX\_AIN2\_AIN3}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_MUX\_AIN2\_GND}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_MUX\_AIN3\_GND}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_MUX\_MASK}
+    \subitem {ads1115.c}, \hyperpage{17}
+  \item {ADS1115\_MUX\_SHIFT}
+    \subitem {ads1115.c}, \hyperpage{17}
+  \item {ads1115\_mux\_t}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_OK}
+    \subitem {ads1115.h}, \hyperpage{40}
+  \item {ADS1115\_OS\_IDLE}
+    \subitem {ads1115.c}, \hyperpage{17}
+  \item {ADS1115\_OS\_MASK}
+    \subitem {ads1115.c}, \hyperpage{17}
+  \item {ADS1115\_OS\_SHIFT}
+    \subitem {ads1115.c}, \hyperpage{17}
+  \item {ADS1115\_OS\_START\_SINGLE}
+    \subitem {ads1115.c}, \hyperpage{17}
+  \item {ADS1115\_PGA\_MASK}
+    \subitem {ads1115.c}, \hyperpage{17}
+  \item {ADS1115\_PGA\_SHIFT}
+    \subitem {ads1115.c}, \hyperpage{18}
+  \item {ADS1115\_RANGE\_0V256}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_RANGE\_0V512}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_RANGE\_1V024}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_RANGE\_2V048}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_RANGE\_4V096}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_RANGE\_6V144}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ads1115\_range\_t}
+    \subitem {ads1115.h}, \hyperpage{41}
+  \item {ADS1115\_REG\_CONFIG}
+    \subitem {ads1115.c}, \hyperpage{18}
+  \item {ADS1115\_REG\_CONVERSION}
+    \subitem {ads1115.c}, \hyperpage{18}
+  \item {ADS1115\_REG\_HI\_THRESH}
+    \subitem {ads1115.c}, \hyperpage{18}
+  \item {ADS1115\_REG\_LO\_THRESH}
+    \subitem {ads1115.c}, \hyperpage{18}
+  \item {ads1115\_set\_channel}
+    \subitem {ads1115.c}, \hyperpage{23}
+    \subitem {ads1115.h}, \hyperpage{46}
+  \item {ads1115\_set\_compare\_alert}
+    \subitem {ads1115.c}, \hyperpage{23}
+    \subitem {ads1115.h}, \hyperpage{46}
+  \item {ads1115\_set\_compare\_latch}
+    \subitem {ads1115.c}, \hyperpage{24}
+    \subitem {ads1115.h}, \hyperpage{47}
+  \item {ads1115\_set\_compare\_mode}
+    \subitem {ads1115.c}, \hyperpage{24}
+    \subitem {ads1115.h}, \hyperpage{47}
+  \item {ads1115\_set\_compare\_queue}
+    \subitem {ads1115.c}, \hyperpage{24}
+    \subitem {ads1115.h}, \hyperpage{47}
+  \item {ads1115\_set\_compare\_threshold}
+    \subitem {ads1115.c}, \hyperpage{25}
+    \subitem {ads1115.h}, \hyperpage{48}
+  \item {ads1115\_set\_data\_rate}
+    \subitem {ads1115.c}, \hyperpage{25}
+    \subitem {ads1115.h}, \hyperpage{48}
+  \item {ads1115\_set\_range}
+    \subitem {ads1115.c}, \hyperpage{25}
+    \subitem {ads1115.h}, \hyperpage{48}
+  \item {ads1115\_single\_read}
+    \subitem {ads1115.c}, \hyperpage{26}
+    \subitem {ads1115.h}, \hyperpage{49}
+
+  \indexspace
+
+  \item {comp\_latch}
+    \subitem {ads1115\_config\_t}, \hyperpage{5}
+  \item {comp\_mode}
+    \subitem {ads1115\_config\_t}, \hyperpage{5}
+  \item {comp\_pol}
+    \subitem {ads1115\_config\_t}, \hyperpage{6}
+  \item {comp\_queue}
+    \subitem {ads1115\_config\_t}, \hyperpage{6}
+  \item {config}
+    \subitem {ads1115\_handle\_t}, \hyperpage{8}
+
+  \indexspace
+
+  \item {data\_rate}
+    \subitem {ads1115\_config\_t}, \hyperpage{6}
+  \item {delay\_ms}
+    \subitem {ads1115\_handle\_t}, \hyperpage{8}
+
+  \indexspace
+
+  \item {high\_threshold}
+    \subitem {ads1115\_config\_t}, \hyperpage{6}
+
+  \indexspace
+
+  \item {i2c\_addr}
+    \subitem {ads1115\_handle\_t}, \hyperpage{8}
+  \item {i2c\_read}
+    \subitem {ads1115\_handle\_t}, \hyperpage{8}
+  \item {i2c\_write}
+    \subitem {ads1115\_handle\_t}, \hyperpage{8}
+  \item {interface/ads1115\_interface.c}, \hyperpage{9}, \hyperpage{11}
+  \item {interface/ads1115\_interface.h}, \hyperpage{11}, 
+		\hyperpage{13}
+  \item {is\_initialized}
+    \subitem {ads1115\_handle\_t}, \hyperpage{8}
+
+  \indexspace
+
+  \item {low\_threshold}
+    \subitem {ads1115\_config\_t}, \hyperpage{6}
+
+  \indexspace
+
+  \item {mode}
+    \subitem {ads1115\_config\_t}, \hyperpage{6}
+  \item {mux}
+    \subitem {ads1115\_config\_t}, \hyperpage{7}
+
+  \indexspace
+
+  \item {range}
+    \subitem {ads1115\_config\_t}, \hyperpage{7}
+
+  \indexspace
+
+  \item {src/ads1115.c}, \hyperpage{13}, \hyperpage{26}
+  \item {src/ads1115.h}, \hyperpage{34}, \hyperpage{49}
+
+\end{theindex}
