@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['high_5fthreshold_0',['high_threshold',['../structads1115__config__t.html#a4e20db2aa1c6fc077c1666d16b4156d5',1,'ads1115_config_t']]]
+  ['features_0',['Features',['../index.html#features_sec',1,'']]],
+  ['function_20pointers_1',['Function Pointers',['../group__ADS1115__Callbacks.html',1,'']]],
+  ['functions_2',['API Functions',['../group__ADS1115__Functions.html',1,'']]]
 ];

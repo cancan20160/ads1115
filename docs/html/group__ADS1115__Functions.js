@@ -1,0 +1,26 @@
+var group__ADS1115__Functions =
+[
+    [ "ads1115_continuous_conversion_read", "group__ADS1115__Functions.html#ga006ac4c54e15adf86117bc18b978c914", null ],
+    [ "ads1115_continuous_conversion_start", "group__ADS1115__Functions.html#gab2094d9f45c26002234c33009bf7bac9", null ],
+    [ "ads1115_continuous_conversion_stop", "group__ADS1115__Functions.html#gaf942c69ce370e1d984dd27b6fb0472dc", null ],
+    [ "ads1115_deinit", "group__ADS1115__Functions.html#ga3440d1a42696d27c4cacff834225d274", null ],
+    [ "ads1115_get_channel", "group__ADS1115__Functions.html#ga66b8caa526c34429e09f6568b993a0fc", null ],
+    [ "ads1115_get_compare_alert", "group__ADS1115__Functions.html#gafb6d513e89d01219f26ff3ab89e6aaff", null ],
+    [ "ads1115_get_compare_latch", "group__ADS1115__Functions.html#ga45229478645980bab4e8c4a174ee84e9", null ],
+    [ "ads1115_get_compare_mode", "group__ADS1115__Functions.html#ga7056ca89707eae4f7abed5015968e0af", null ],
+    [ "ads1115_get_compare_queue", "group__ADS1115__Functions.html#ga948c35cd07df6c107d57e34a5d5309f0", null ],
+    [ "ads1115_get_compare_threshold", "group__ADS1115__Functions.html#gaee2943f63fbc4c5daaec05942022bd58", null ],
+    [ "ads1115_get_data_rate", "group__ADS1115__Functions.html#gaa652ecc77a86ea0019c844274668beb3", null ],
+    [ "ads1115_get_range", "group__ADS1115__Functions.html#gae0dbe507e2c576ac7697257d51717234", null ],
+    [ "ads1115_init", "group__ADS1115__Functions.html#gaee310e8f432fb4d3e3ab8591fbee6a83", null ],
+    [ "ads1115_is_ready", "group__ADS1115__Functions.html#ga843b7ac1928adba6d004f789f7e91302", null ],
+    [ "ads1115_set_channel", "group__ADS1115__Functions.html#ga8db153c26cfc2db3ab439ad16dc512fd", null ],
+    [ "ads1115_set_compare_alert", "group__ADS1115__Functions.html#gaaf0d2763b9c72eb92718d24873ced60c", null ],
+    [ "ads1115_set_compare_latch", "group__ADS1115__Functions.html#gaa79beed167e5be28c5508026fd1faf83", null ],
+    [ "ads1115_set_compare_mode", "group__ADS1115__Functions.html#ga875854bb73f773c292d46e2c09c24ed5", null ],
+    [ "ads1115_set_compare_queue", "group__ADS1115__Functions.html#ga42bcb0bed644ee19e34a0d36593868ba", null ],
+    [ "ads1115_set_compare_threshold", "group__ADS1115__Functions.html#ga836e960040fe18dbc8770f8d96b3d19b", null ],
+    [ "ads1115_set_data_rate", "group__ADS1115__Functions.html#ga4409b19f53346385a22d9a79bdfe4a6f", null ],
+    [ "ads1115_set_range", "group__ADS1115__Functions.html#gac0dd1b27d59e6ad7ab115e307765e55f", null ],
+    [ "ads1115_single_read", "group__ADS1115__Functions.html#ga756f47a1a07ea1f5c1e5e5fd48905f69", null ]
+];

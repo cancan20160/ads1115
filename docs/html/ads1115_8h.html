@@ -93,7 +93,7 @@ $(function(){initNavTree('ads1115_8h.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>ADS1115 16-Bit ADC Driver - Platform Independent.  
+<p>ADS1115 16-Bit ADC Driver - Header File.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
@@ -103,1340 +103,162 @@ $(function(){initNavTree('ads1115_8h.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:ads1115_5Fconfig_5Ft" id="r_ads1115_5Fconfig_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structads1115__config__t.html">ads1115_config_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADS1115 configuration structure.  <a href="structads1115__config__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADS1115 full configuration parameters.  <a href="structads1115__config__t.html#details">More...</a><br /></td></tr>
 <tr class="memitem:ads1115_5Fhandle_5Ft" id="r_ads1115_5Fhandle_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADS1115 device handle structure.  <a href="structads1115__handle__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADS1115 device handle.  <a href="structads1115__handle__t.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9b80edff76d1b62f6efeb59d1eb875cf" id="r_a9b80edff76d1b62f6efeb59d1eb875cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b80edff76d1b62f6efeb59d1eb875cf">ADS1115_DEFAULT_CONFIGURATION</a></td></tr>
-<tr class="memdesc:a9b80edff76d1b62f6efeb59d1eb875cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default configuration values at compile time.  <br /></td></tr>
+<tr class="memitem:ga9b80edff76d1b62f6efeb59d1eb875cf" id="r_ga9b80edff76d1b62f6efeb59d1eb875cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Driver.html#ga9b80edff76d1b62f6efeb59d1eb875cf">ADS1115_DEFAULT_CONFIGURATION</a></td></tr>
+<tr class="memdesc:ga9b80edff76d1b62f6efeb59d1eb875cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default power-up configuration macro.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a7f92f74640465fba87e6c0594854f70a" id="r_a7f92f74640465fba87e6c0594854f70a"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f92f74640465fba87e6c0594854f70a">ads1115_i2c_write_t</a>) (uint8_t device_addr, uint8_t reg_addr, const uint8_t *data, uint8_t length)</td></tr>
-<tr class="memdesc:a7f92f74640465fba87e6c0594854f70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C write callback function type.  <br /></td></tr>
-<tr class="memitem:a3a0f1e6f2cfd94a667f605d8baead7ca" id="r_a3a0f1e6f2cfd94a667f605d8baead7ca"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a0f1e6f2cfd94a667f605d8baead7ca">ads1115_i2c_read_t</a>) (uint8_t device_addr, uint8_t reg_addr, uint8_t *data, uint8_t length)</td></tr>
-<tr class="memdesc:a3a0f1e6f2cfd94a667f605d8baead7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C read callback function type.  <br /></td></tr>
-<tr class="memitem:a2e82240ef42eb5a490b4cbc5f8e2d809" id="r_a2e82240ef42eb5a490b4cbc5f8e2d809"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e82240ef42eb5a490b4cbc5f8e2d809">ads1115_delay_ms_t</a>) (uint32_t milliseconds)</td></tr>
-<tr class="memdesc:a2e82240ef42eb5a490b4cbc5f8e2d809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay callback function type.  <br /></td></tr>
+<tr class="memitem:ga7f92f74640465fba87e6c0594854f70a" id="r_ga7f92f74640465fba87e6c0594854f70a"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Callbacks.html#ga7f92f74640465fba87e6c0594854f70a">ads1115_i2c_write_t</a>) (uint8_t device_addr, uint8_t reg_addr, const uint8_t *data, uint8_t length)</td></tr>
+<tr class="memitem:ga3a0f1e6f2cfd94a667f605d8baead7ca" id="r_ga3a0f1e6f2cfd94a667f605d8baead7ca"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Callbacks.html#ga3a0f1e6f2cfd94a667f605d8baead7ca">ads1115_i2c_read_t</a>) (uint8_t device_addr, uint8_t reg_addr, uint8_t *data, uint8_t length)</td></tr>
+<tr class="memitem:ga2e82240ef42eb5a490b4cbc5f8e2d809" id="r_ga2e82240ef42eb5a490b4cbc5f8e2d809"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Callbacks.html#ga2e82240ef42eb5a490b4cbc5f8e2d809">ads1115_delay_ms_t</a>) (uint32_t milliseconds)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:abe349a9135337d061e760b425d48475c" id="r_abe349a9135337d061e760b425d48475c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> { <br />
-&#160;&#160;<a class="el" href="#abe349a9135337d061e760b425d48475caf4d2038aadaef7c954d2a4179126d6c6">ADS1115_OK</a> = 0
-, <a class="el" href="#abe349a9135337d061e760b425d48475ca1fd9303663bc12601773e4eff60c32c3">ADS1115_ERROR_INVALID_PARAM</a>
-, <a class="el" href="#abe349a9135337d061e760b425d48475ca9711416ad1bfdcf19d900063a2a8213a">ADS1115_ERROR_I2C_WRITE</a>
-, <a class="el" href="#abe349a9135337d061e760b425d48475ca46e38212689b4a9ec823dfdc4afd75cf">ADS1115_ERROR_I2C_READ</a>
+<tr class="memitem:gabe349a9135337d061e760b425d48475c" id="r_gabe349a9135337d061e760b425d48475c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a> { <br />
+&#160;&#160;<a class="el" href="group__ADS1115__Enums.html#ggabe349a9135337d061e760b425d48475caf4d2038aadaef7c954d2a4179126d6c6">ADS1115_OK</a> = 0
+, <a class="el" href="group__ADS1115__Enums.html#ggabe349a9135337d061e760b425d48475ca1fd9303663bc12601773e4eff60c32c3">ADS1115_ERROR_INVALID_PARAM</a>
+, <a class="el" href="group__ADS1115__Enums.html#ggabe349a9135337d061e760b425d48475ca9711416ad1bfdcf19d900063a2a8213a">ADS1115_ERROR_I2C_WRITE</a>
+, <a class="el" href="group__ADS1115__Enums.html#ggabe349a9135337d061e760b425d48475ca46e38212689b4a9ec823dfdc4afd75cf">ADS1115_ERROR_I2C_READ</a>
 , <br />
-&#160;&#160;<a class="el" href="#abe349a9135337d061e760b425d48475ca0fcb29199dfe9a862505bc6e9e5effd8">ADS1115_ERROR_TIMEOUT</a>
-, <a class="el" href="#abe349a9135337d061e760b425d48475cabad18da4a9c11e94ca25ae368c771120">ADS1115_ERROR_NOT_INITIALIZED</a>
-, <a class="el" href="#abe349a9135337d061e760b425d48475cafdb46bd061cadda4e3b8619031fe8586">ADS1115_ERROR_CONVERSION_BUSY</a>
-, <a class="el" href="#abe349a9135337d061e760b425d48475cac7e6f14d281b17f6889d7f1a11f7c59d">ADS1115_ERROR_NULL_POINTER</a>
+&#160;&#160;<a class="el" href="group__ADS1115__Enums.html#ggabe349a9135337d061e760b425d48475ca0fcb29199dfe9a862505bc6e9e5effd8">ADS1115_ERROR_TIMEOUT</a>
+, <a class="el" href="group__ADS1115__Enums.html#ggabe349a9135337d061e760b425d48475cabad18da4a9c11e94ca25ae368c771120">ADS1115_ERROR_NOT_INITIALIZED</a>
+, <a class="el" href="group__ADS1115__Enums.html#ggabe349a9135337d061e760b425d48475cafdb46bd061cadda4e3b8619031fe8586">ADS1115_ERROR_CONVERSION_BUSY</a>
+, <a class="el" href="group__ADS1115__Enums.html#ggabe349a9135337d061e760b425d48475cac7e6f14d281b17f6889d7f1a11f7c59d">ADS1115_ERROR_NULL_POINTER</a>
 <br />
  }</td></tr>
-<tr class="memdesc:abe349a9135337d061e760b425d48475c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error codes for ADS1115 operations.  <a href="#abe349a9135337d061e760b425d48475c">More...</a><br /></td></tr>
-<tr class="memitem:aefd45489aa6752769eec45984c273136" id="r_aefd45489aa6752769eec45984c273136"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefd45489aa6752769eec45984c273136">ads1115_i2c_addr_t</a> { <a class="el" href="#aefd45489aa6752769eec45984c273136ae00dba43251498783cde4bd77e0842d2">ADS1115_ADDR_GND</a> = 0x48
-, <a class="el" href="#aefd45489aa6752769eec45984c273136af4bfa7aff4035b364d33e198ba03428d">ADS1115_ADDR_VDD</a> = 0x49
-, <a class="el" href="#aefd45489aa6752769eec45984c273136a345c181fa05ffd93175a861ddd434589">ADS1115_ADDR_SDA</a> = 0x4A
-, <a class="el" href="#aefd45489aa6752769eec45984c273136a89713b378cd809d0ef29c564a40bd7d8">ADS1115_ADDR_SCL</a> = 0x4B
+<tr class="memdesc:gabe349a9135337d061e760b425d48475c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error codes for ADS1115 operations.  <a href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">More...</a><br /></td></tr>
+<tr class="memitem:gaefd45489aa6752769eec45984c273136" id="r_gaefd45489aa6752769eec45984c273136"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#gaefd45489aa6752769eec45984c273136">ads1115_i2c_addr_t</a> { <a class="el" href="group__ADS1115__Enums.html#ggaefd45489aa6752769eec45984c273136ae00dba43251498783cde4bd77e0842d2">ADS1115_ADDR_GND</a> = 0x48
+, <a class="el" href="group__ADS1115__Enums.html#ggaefd45489aa6752769eec45984c273136af4bfa7aff4035b364d33e198ba03428d">ADS1115_ADDR_VDD</a> = 0x49
+, <a class="el" href="group__ADS1115__Enums.html#ggaefd45489aa6752769eec45984c273136a345c181fa05ffd93175a861ddd434589">ADS1115_ADDR_SDA</a> = 0x4A
+, <a class="el" href="group__ADS1115__Enums.html#ggaefd45489aa6752769eec45984c273136a89713b378cd809d0ef29c564a40bd7d8">ADS1115_ADDR_SCL</a> = 0x4B
  }</td></tr>
-<tr class="memdesc:aefd45489aa6752769eec45984c273136"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C address selection based on ADDR pin connection.  <a href="#aefd45489aa6752769eec45984c273136">More...</a><br /></td></tr>
-<tr class="memitem:ac7d6e5a3ff2b7361a71745d290783884" id="r_ac7d6e5a3ff2b7361a71745d290783884"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884">ads1115_mux_t</a> { <br />
-&#160;&#160;<a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884a9ad6737cba4c3efdf592cb09147c5cba">ADS1115_MUX_AIN0_AIN1</a> = 0
-, <a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884ad7b0accf986f84e05332c9874da0c50e">ADS1115_MUX_AIN0_AIN3</a> = 1
-, <a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884a49fc5b53647faec816193015387f5697">ADS1115_MUX_AIN1_AIN3</a> = 2
-, <a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884a91c644a24ccdb13cc8cb8d18292cbc6c">ADS1115_MUX_AIN2_AIN3</a> = 3
+<tr class="memdesc:gaefd45489aa6752769eec45984c273136"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C address selection based on ADDR pin connection.  <a href="group__ADS1115__Enums.html#gaefd45489aa6752769eec45984c273136">More...</a><br /></td></tr>
+<tr class="memitem:gac7d6e5a3ff2b7361a71745d290783884" id="r_gac7d6e5a3ff2b7361a71745d290783884"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#gac7d6e5a3ff2b7361a71745d290783884">ads1115_mux_t</a> { <br />
+&#160;&#160;<a class="el" href="group__ADS1115__Enums.html#ggac7d6e5a3ff2b7361a71745d290783884a9ad6737cba4c3efdf592cb09147c5cba">ADS1115_MUX_AIN0_AIN1</a> = 0
+, <a class="el" href="group__ADS1115__Enums.html#ggac7d6e5a3ff2b7361a71745d290783884ad7b0accf986f84e05332c9874da0c50e">ADS1115_MUX_AIN0_AIN3</a> = 1
+, <a class="el" href="group__ADS1115__Enums.html#ggac7d6e5a3ff2b7361a71745d290783884a49fc5b53647faec816193015387f5697">ADS1115_MUX_AIN1_AIN3</a> = 2
+, <a class="el" href="group__ADS1115__Enums.html#ggac7d6e5a3ff2b7361a71745d290783884a91c644a24ccdb13cc8cb8d18292cbc6c">ADS1115_MUX_AIN2_AIN3</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884a155e9823641644fbbb9f23f7aac4a556">ADS1115_MUX_AIN0_GND</a> = 4
-, <a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884a8c86fa71ada5db36fdcfdc3e75fa4835">ADS1115_MUX_AIN1_GND</a> = 5
-, <a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884afc57704ec9ab5b749cceaf1abc13e2d2">ADS1115_MUX_AIN2_GND</a> = 6
-, <a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884afe0e2ac573709e2b519b71b12367aeb4">ADS1115_MUX_AIN3_GND</a> = 7
+&#160;&#160;<a class="el" href="group__ADS1115__Enums.html#ggac7d6e5a3ff2b7361a71745d290783884a155e9823641644fbbb9f23f7aac4a556">ADS1115_MUX_AIN0_GND</a> = 4
+, <a class="el" href="group__ADS1115__Enums.html#ggac7d6e5a3ff2b7361a71745d290783884a8c86fa71ada5db36fdcfdc3e75fa4835">ADS1115_MUX_AIN1_GND</a> = 5
+, <a class="el" href="group__ADS1115__Enums.html#ggac7d6e5a3ff2b7361a71745d290783884afc57704ec9ab5b749cceaf1abc13e2d2">ADS1115_MUX_AIN2_GND</a> = 6
+, <a class="el" href="group__ADS1115__Enums.html#ggac7d6e5a3ff2b7361a71745d290783884afe0e2ac573709e2b519b71b12367aeb4">ADS1115_MUX_AIN3_GND</a> = 7
 <br />
  }</td></tr>
-<tr class="memdesc:ac7d6e5a3ff2b7361a71745d290783884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input multiplexer configuration (channel selection)  <a href="#ac7d6e5a3ff2b7361a71745d290783884">More...</a><br /></td></tr>
-<tr class="memitem:ad3ddcc5a2227cb0180d83b578d5685a4" id="r_ad3ddcc5a2227cb0180d83b578d5685a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4">ads1115_range_t</a> { <br />
-&#160;&#160;<a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4a79c21c30f75882c3cb73d3fc53a40f35">ADS1115_RANGE_6V144</a> = 0
-, <a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4a9cea75232f9b4bf60d068dee352de56c">ADS1115_RANGE_4V096</a> = 1
-, <a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4a24335e637cb85d696b8ae13dfb54ab99">ADS1115_RANGE_2V048</a> = 2
-, <a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4a5a34029a213f000869c2de9ba0250b51">ADS1115_RANGE_1V024</a> = 3
+<tr class="memdesc:gac7d6e5a3ff2b7361a71745d290783884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input multiplexer configuration (channel selection)  <a href="group__ADS1115__Enums.html#gac7d6e5a3ff2b7361a71745d290783884">More...</a><br /></td></tr>
+<tr class="memitem:gad3ddcc5a2227cb0180d83b578d5685a4" id="r_gad3ddcc5a2227cb0180d83b578d5685a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#gad3ddcc5a2227cb0180d83b578d5685a4">ads1115_range_t</a> { <br />
+&#160;&#160;<a class="el" href="group__ADS1115__Enums.html#ggad3ddcc5a2227cb0180d83b578d5685a4a79c21c30f75882c3cb73d3fc53a40f35">ADS1115_RANGE_6V144</a> = 0
+, <a class="el" href="group__ADS1115__Enums.html#ggad3ddcc5a2227cb0180d83b578d5685a4a9cea75232f9b4bf60d068dee352de56c">ADS1115_RANGE_4V096</a> = 1
+, <a class="el" href="group__ADS1115__Enums.html#ggad3ddcc5a2227cb0180d83b578d5685a4a24335e637cb85d696b8ae13dfb54ab99">ADS1115_RANGE_2V048</a> = 2
+, <a class="el" href="group__ADS1115__Enums.html#ggad3ddcc5a2227cb0180d83b578d5685a4a5a34029a213f000869c2de9ba0250b51">ADS1115_RANGE_1V024</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4afbe73ff3e1ffcddb7396a76c844f747c">ADS1115_RANGE_0V512</a> = 4
-, <a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4afa3a85b07199ccf5a219529ac3230def">ADS1115_RANGE_0V256</a> = 5
+&#160;&#160;<a class="el" href="group__ADS1115__Enums.html#ggad3ddcc5a2227cb0180d83b578d5685a4afbe73ff3e1ffcddb7396a76c844f747c">ADS1115_RANGE_0V512</a> = 4
+, <a class="el" href="group__ADS1115__Enums.html#ggad3ddcc5a2227cb0180d83b578d5685a4afa3a85b07199ccf5a219529ac3230def">ADS1115_RANGE_0V256</a> = 5
 <br />
  }</td></tr>
-<tr class="memdesc:ad3ddcc5a2227cb0180d83b578d5685a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programmable gain amplifier configuration.  <a href="#ad3ddcc5a2227cb0180d83b578d5685a4">More...</a><br /></td></tr>
-<tr class="memitem:abaa3a38dc897f434aaa0ff12ebaaa7c3" id="r_abaa3a38dc897f434aaa0ff12ebaaa7c3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaa3a38dc897f434aaa0ff12ebaaa7c3">ads1115_mode_t</a> { <a class="el" href="#abaa3a38dc897f434aaa0ff12ebaaa7c3a42db4b2f27c517633aee29f5d5a657ad">ADS1115_MODE_CONTINUOUS</a> = 0
-, <a class="el" href="#abaa3a38dc897f434aaa0ff12ebaaa7c3a061a9704017e3768dd7ac7ec4512ace0">ADS1115_MODE_SINGLE_SHOT</a> = 1
+<tr class="memdesc:gad3ddcc5a2227cb0180d83b578d5685a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programmable Gain Amplifier (PGA) and Full-Scale Range (FSR)  <a href="group__ADS1115__Enums.html#gad3ddcc5a2227cb0180d83b578d5685a4">More...</a><br /></td></tr>
+<tr class="memitem:gabaa3a38dc897f434aaa0ff12ebaaa7c3" id="r_gabaa3a38dc897f434aaa0ff12ebaaa7c3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#gabaa3a38dc897f434aaa0ff12ebaaa7c3">ads1115_mode_t</a> { <a class="el" href="group__ADS1115__Enums.html#ggabaa3a38dc897f434aaa0ff12ebaaa7c3a42db4b2f27c517633aee29f5d5a657ad">ADS1115_MODE_CONTINUOUS</a> = 0
+, <a class="el" href="group__ADS1115__Enums.html#ggabaa3a38dc897f434aaa0ff12ebaaa7c3a061a9704017e3768dd7ac7ec4512ace0">ADS1115_MODE_SINGLE_SHOT</a> = 1
  }</td></tr>
-<tr class="memdesc:abaa3a38dc897f434aaa0ff12ebaaa7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device operating mode.  <a href="#abaa3a38dc897f434aaa0ff12ebaaa7c3">More...</a><br /></td></tr>
-<tr class="memitem:aad7bebb6fe400f1a91096ee8854d6497" id="r_aad7bebb6fe400f1a91096ee8854d6497"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497">ads1115_data_rate_t</a> { <br />
-&#160;&#160;<a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497acf2ff47b990bee691c189e45baee9e31">ADS1115_DR_8_SPS</a> = 0
-, <a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497a86652d0938af5d3b93cd4567bf41b4c5">ADS1115_DR_16_SPS</a> = 1
-, <a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497ac98e1baf1464c152e67cd7bd11eb03e0">ADS1115_DR_32_SPS</a> = 2
-, <a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497a1816fb163518e56366873e5a225d6cc2">ADS1115_DR_64_SPS</a> = 3
+<tr class="memdesc:gabaa3a38dc897f434aaa0ff12ebaaa7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device operating mode.  <a href="group__ADS1115__Enums.html#gabaa3a38dc897f434aaa0ff12ebaaa7c3">More...</a><br /></td></tr>
+<tr class="memitem:gaad7bebb6fe400f1a91096ee8854d6497" id="r_gaad7bebb6fe400f1a91096ee8854d6497"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#gaad7bebb6fe400f1a91096ee8854d6497">ads1115_data_rate_t</a> { <br />
+&#160;&#160;<a class="el" href="group__ADS1115__Enums.html#ggaad7bebb6fe400f1a91096ee8854d6497acf2ff47b990bee691c189e45baee9e31">ADS1115_DR_8_SPS</a> = 0
+, <a class="el" href="group__ADS1115__Enums.html#ggaad7bebb6fe400f1a91096ee8854d6497a86652d0938af5d3b93cd4567bf41b4c5">ADS1115_DR_16_SPS</a> = 1
+, <a class="el" href="group__ADS1115__Enums.html#ggaad7bebb6fe400f1a91096ee8854d6497ac98e1baf1464c152e67cd7bd11eb03e0">ADS1115_DR_32_SPS</a> = 2
+, <a class="el" href="group__ADS1115__Enums.html#ggaad7bebb6fe400f1a91096ee8854d6497a1816fb163518e56366873e5a225d6cc2">ADS1115_DR_64_SPS</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497a4025ce471c9091b1a26cb20ba5af9772">ADS1115_DR_128_SPS</a> = 4
-, <a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497ab6273c58e27a835baeb610e84f70b85b">ADS1115_DR_250_SPS</a> = 5
-, <a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497a272921736443970e75320e1ab4cdc919">ADS1115_DR_475_SPS</a> = 6
-, <a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497abd00c2f744614baebf221aca38c4cfc2">ADS1115_DR_860_SPS</a> = 7
+&#160;&#160;<a class="el" href="group__ADS1115__Enums.html#ggaad7bebb6fe400f1a91096ee8854d6497a4025ce471c9091b1a26cb20ba5af9772">ADS1115_DR_128_SPS</a> = 4
+, <a class="el" href="group__ADS1115__Enums.html#ggaad7bebb6fe400f1a91096ee8854d6497ab6273c58e27a835baeb610e84f70b85b">ADS1115_DR_250_SPS</a> = 5
+, <a class="el" href="group__ADS1115__Enums.html#ggaad7bebb6fe400f1a91096ee8854d6497a272921736443970e75320e1ab4cdc919">ADS1115_DR_475_SPS</a> = 6
+, <a class="el" href="group__ADS1115__Enums.html#ggaad7bebb6fe400f1a91096ee8854d6497abd00c2f744614baebf221aca38c4cfc2">ADS1115_DR_860_SPS</a> = 7
 <br />
  }</td></tr>
-<tr class="memdesc:aad7bebb6fe400f1a91096ee8854d6497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data rate (samples per second)  <a href="#aad7bebb6fe400f1a91096ee8854d6497">More...</a><br /></td></tr>
-<tr class="memitem:ac717c4f9401a830d9e3c338ade85cf1a" id="r_ac717c4f9401a830d9e3c338ade85cf1a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac717c4f9401a830d9e3c338ade85cf1a">ads1115_comp_mode_t</a> { <a class="el" href="#ac717c4f9401a830d9e3c338ade85cf1aa87ef6456a7dc5c21a825d13aac3ac43d">ADS1115_COMP_MODE_TRADITIONAL</a> = 0
-, <a class="el" href="#ac717c4f9401a830d9e3c338ade85cf1aad5006e3c4d79ed5af648741b9fce71c4">ADS1115_COMP_MODE_WINDOW</a> = 1
+<tr class="memdesc:gaad7bebb6fe400f1a91096ee8854d6497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data rate (samples per second)  <a href="group__ADS1115__Enums.html#gaad7bebb6fe400f1a91096ee8854d6497">More...</a><br /></td></tr>
+<tr class="memitem:gac717c4f9401a830d9e3c338ade85cf1a" id="r_gac717c4f9401a830d9e3c338ade85cf1a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#gac717c4f9401a830d9e3c338ade85cf1a">ads1115_comp_mode_t</a> { <a class="el" href="group__ADS1115__Enums.html#ggac717c4f9401a830d9e3c338ade85cf1aa87ef6456a7dc5c21a825d13aac3ac43d">ADS1115_COMP_MODE_TRADITIONAL</a> = 0
+, <a class="el" href="group__ADS1115__Enums.html#ggac717c4f9401a830d9e3c338ade85cf1aad5006e3c4d79ed5af648741b9fce71c4">ADS1115_COMP_MODE_WINDOW</a> = 1
  }</td></tr>
-<tr class="memdesc:ac717c4f9401a830d9e3c338ade85cf1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comperator mode.  <a href="#ac717c4f9401a830d9e3c338ade85cf1a">More...</a><br /></td></tr>
-<tr class="memitem:ac75b9da05f4f523fbc2626807d0302aa" id="r_ac75b9da05f4f523fbc2626807d0302aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac75b9da05f4f523fbc2626807d0302aa">ads1115_comp_polarity_t</a> { <a class="el" href="#ac75b9da05f4f523fbc2626807d0302aaa4d2a8c4f959d6415e47ece839bdf2d38">ADS1115_COMP_POL_ACTIVE_LOW</a> = 0
-, <a class="el" href="#ac75b9da05f4f523fbc2626807d0302aaa15563412abc80fb9b5d555ba271ee895">ADS1115_COMP_POL_ACTIVE_HIGH</a> = 1
+<tr class="memdesc:gac717c4f9401a830d9e3c338ade85cf1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator operational mode.  <a href="group__ADS1115__Enums.html#gac717c4f9401a830d9e3c338ade85cf1a">More...</a><br /></td></tr>
+<tr class="memitem:gac75b9da05f4f523fbc2626807d0302aa" id="r_gac75b9da05f4f523fbc2626807d0302aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#gac75b9da05f4f523fbc2626807d0302aa">ads1115_comp_polarity_t</a> { <a class="el" href="group__ADS1115__Enums.html#ggac75b9da05f4f523fbc2626807d0302aaa4d2a8c4f959d6415e47ece839bdf2d38">ADS1115_COMP_POL_ACTIVE_LOW</a> = 0
+, <a class="el" href="group__ADS1115__Enums.html#ggac75b9da05f4f523fbc2626807d0302aaa15563412abc80fb9b5d555ba271ee895">ADS1115_COMP_POL_ACTIVE_HIGH</a> = 1
  }</td></tr>
-<tr class="memdesc:ac75b9da05f4f523fbc2626807d0302aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator polarity.  <a href="#ac75b9da05f4f523fbc2626807d0302aa">More...</a><br /></td></tr>
-<tr class="memitem:a69382a9581acd1df707380c157fcdf56" id="r_a69382a9581acd1df707380c157fcdf56"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69382a9581acd1df707380c157fcdf56">ads1115_comp_latch_t</a> { <a class="el" href="#a69382a9581acd1df707380c157fcdf56aee2a2c221c68c719faba082c1351f85c">ADS1115_COMP_LAT_NON_LATCHING</a> = 0
-, <a class="el" href="#a69382a9581acd1df707380c157fcdf56aa68e197827075d12076aef1cd01ff025">ADS1115_COMP_LAT_LATCHING</a> = 1
+<tr class="memdesc:gac75b9da05f4f523fbc2626807d0302aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ALERT/RDY pin polarity.  <a href="group__ADS1115__Enums.html#gac75b9da05f4f523fbc2626807d0302aa">More...</a><br /></td></tr>
+<tr class="memitem:ga69382a9581acd1df707380c157fcdf56" id="r_ga69382a9581acd1df707380c157fcdf56"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#ga69382a9581acd1df707380c157fcdf56">ads1115_comp_latch_t</a> { <a class="el" href="group__ADS1115__Enums.html#gga69382a9581acd1df707380c157fcdf56aee2a2c221c68c719faba082c1351f85c">ADS1115_COMP_LAT_NON_LATCHING</a> = 0
+, <a class="el" href="group__ADS1115__Enums.html#gga69382a9581acd1df707380c157fcdf56aa68e197827075d12076aef1cd01ff025">ADS1115_COMP_LAT_LATCHING</a> = 1
  }</td></tr>
-<tr class="memdesc:a69382a9581acd1df707380c157fcdf56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latching comparator.  <a href="#a69382a9581acd1df707380c157fcdf56">More...</a><br /></td></tr>
-<tr class="memitem:a6cb6e7c92ee7af9b1e92274072fd8c72" id="r_a6cb6e7c92ee7af9b1e92274072fd8c72"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72">ads1115_comp_queue_t</a> { <a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72a68af0ccda4f115e9cbea58fddbf62647">ADS1115_COMP_QUE_1_CONV</a> = 0
-, <a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72adb71ddf7c5b2a02eece0afe89b833fe3">ADS1115_COMP_QUE_2_CONV</a> = 1
-, <a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72ade052cdc2f567f94310e386b39fdb309">ADS1115_COMP_QUE_4_CONV</a> = 2
-, <a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72a0d8f0a96798a083657ca9ab3934ca165">ADS1115_COMP_QUE_DISABLE</a> = 3
+<tr class="memdesc:ga69382a9581acd1df707380c157fcdf56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator latching behavior.  <a href="group__ADS1115__Enums.html#ga69382a9581acd1df707380c157fcdf56">More...</a><br /></td></tr>
+<tr class="memitem:ga6cb6e7c92ee7af9b1e92274072fd8c72" id="r_ga6cb6e7c92ee7af9b1e92274072fd8c72"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Enums.html#ga6cb6e7c92ee7af9b1e92274072fd8c72">ads1115_comp_queue_t</a> { <a class="el" href="group__ADS1115__Enums.html#gga6cb6e7c92ee7af9b1e92274072fd8c72a68af0ccda4f115e9cbea58fddbf62647">ADS1115_COMP_QUE_1_CONV</a> = 0
+, <a class="el" href="group__ADS1115__Enums.html#gga6cb6e7c92ee7af9b1e92274072fd8c72adb71ddf7c5b2a02eece0afe89b833fe3">ADS1115_COMP_QUE_2_CONV</a> = 1
+, <a class="el" href="group__ADS1115__Enums.html#gga6cb6e7c92ee7af9b1e92274072fd8c72ade052cdc2f567f94310e386b39fdb309">ADS1115_COMP_QUE_4_CONV</a> = 2
+, <a class="el" href="group__ADS1115__Enums.html#gga6cb6e7c92ee7af9b1e92274072fd8c72a0d8f0a96798a083657ca9ab3934ca165">ADS1115_COMP_QUE_DISABLE</a> = 3
  }</td></tr>
-<tr class="memdesc:a6cb6e7c92ee7af9b1e92274072fd8c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator queue and disable.  <a href="#a6cb6e7c92ee7af9b1e92274072fd8c72">More...</a><br /></td></tr>
+<tr class="memdesc:ga6cb6e7c92ee7af9b1e92274072fd8c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator queue and disable control.  <a href="group__ADS1115__Enums.html#ga6cb6e7c92ee7af9b1e92274072fd8c72">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aee310e8f432fb4d3e3ab8591fbee6a83" id="r_aee310e8f432fb4d3e3ab8591fbee6a83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee310e8f432fb4d3e3ab8591fbee6a83">ads1115_init</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle)</td></tr>
-<tr class="memdesc:aee310e8f432fb4d3e3ab8591fbee6a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize ADS1115 device.  <br /></td></tr>
-<tr class="memitem:a3440d1a42696d27c4cacff834225d274" id="r_a3440d1a42696d27c4cacff834225d274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3440d1a42696d27c4cacff834225d274">ads1115_deinit</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle)</td></tr>
-<tr class="memdesc:a3440d1a42696d27c4cacff834225d274"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize ADS1115 device.  <br /></td></tr>
-<tr class="memitem:ac0dd1b27d59e6ad7ab115e307765e55f" id="r_ac0dd1b27d59e6ad7ab115e307765e55f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0dd1b27d59e6ad7ab115e307765e55f">ads1115_set_range</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4">ads1115_range_t</a> range)</td></tr>
-<tr class="memdesc:ac0dd1b27d59e6ad7ab115e307765e55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set range of adc.  <br /></td></tr>
-<tr class="memitem:ae0dbe507e2c576ac7697257d51717234" id="r_ae0dbe507e2c576ac7697257d51717234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0dbe507e2c576ac7697257d51717234">ads1115_get_range</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4">ads1115_range_t</a> *range)</td></tr>
-<tr class="memdesc:ae0dbe507e2c576ac7697257d51717234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get range of adc.  <br /></td></tr>
-<tr class="memitem:a4409b19f53346385a22d9a79bdfe4a6f" id="r_a4409b19f53346385a22d9a79bdfe4a6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4409b19f53346385a22d9a79bdfe4a6f">ads1115_set_data_rate</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497">ads1115_data_rate_t</a> data_rate)</td></tr>
-<tr class="memdesc:a4409b19f53346385a22d9a79bdfe4a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set adc data sample rate.  <br /></td></tr>
-<tr class="memitem:aa652ecc77a86ea0019c844274668beb3" id="r_aa652ecc77a86ea0019c844274668beb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa652ecc77a86ea0019c844274668beb3">ads1115_get_data_rate</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497">ads1115_data_rate_t</a> *data_rate)</td></tr>
-<tr class="memdesc:aa652ecc77a86ea0019c844274668beb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get adc data sample rate.  <br /></td></tr>
-<tr class="memitem:ab2094d9f45c26002234c33009bf7bac9" id="r_ab2094d9f45c26002234c33009bf7bac9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2094d9f45c26002234c33009bf7bac9">ads1115_continuous_conversion_start</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle)</td></tr>
-<tr class="memdesc:ab2094d9f45c26002234c33009bf7bac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start adc continuous conversion mode.  <br /></td></tr>
-<tr class="memitem:af942c69ce370e1d984dd27b6fb0472dc" id="r_af942c69ce370e1d984dd27b6fb0472dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af942c69ce370e1d984dd27b6fb0472dc">ads1115_continuous_conversion_stop</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle)</td></tr>
-<tr class="memdesc:af942c69ce370e1d984dd27b6fb0472dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop adc continuous conversion mode.  <br /></td></tr>
-<tr class="memitem:a006ac4c54e15adf86117bc18b978c914" id="r_a006ac4c54e15adf86117bc18b978c914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a006ac4c54e15adf86117bc18b978c914">ads1115_continuous_conversion_read</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, int16_t *adc_raw, float *voltage)</td></tr>
-<tr class="memdesc:a006ac4c54e15adf86117bc18b978c914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the result of adc continuously.  <br /></td></tr>
-<tr class="memitem:a756f47a1a07ea1f5c1e5e5fd48905f69" id="r_a756f47a1a07ea1f5c1e5e5fd48905f69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a756f47a1a07ea1f5c1e5e5fd48905f69">ads1115_single_read</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, int16_t *adc_raw, float *voltage)</td></tr>
-<tr class="memdesc:a756f47a1a07ea1f5c1e5e5fd48905f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read adc result once.  <br /></td></tr>
-<tr class="memitem:a8db153c26cfc2db3ab439ad16dc512fd" id="r_a8db153c26cfc2db3ab439ad16dc512fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8db153c26cfc2db3ab439ad16dc512fd">ads1115_set_channel</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884">ads1115_mux_t</a> channel)</td></tr>
-<tr class="memdesc:a8db153c26cfc2db3ab439ad16dc512fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set adc input channel from mux.  <br /></td></tr>
-<tr class="memitem:a66b8caa526c34429e09f6568b993a0fc" id="r_a66b8caa526c34429e09f6568b993a0fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66b8caa526c34429e09f6568b993a0fc">ads1115_get_channel</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884">ads1115_mux_t</a> *channel)</td></tr>
-<tr class="memdesc:a66b8caa526c34429e09f6568b993a0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set adc input channel from mux.  <br /></td></tr>
-<tr class="memitem:a875854bb73f773c292d46e2c09c24ed5" id="r_a875854bb73f773c292d46e2c09c24ed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a875854bb73f773c292d46e2c09c24ed5">ads1115_set_compare_mode</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#ac717c4f9401a830d9e3c338ade85cf1a">ads1115_comp_mode_t</a> compare)</td></tr>
-<tr class="memdesc:a875854bb73f773c292d46e2c09c24ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set comparator mode.  <br /></td></tr>
-<tr class="memitem:a7056ca89707eae4f7abed5015968e0af" id="r_a7056ca89707eae4f7abed5015968e0af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7056ca89707eae4f7abed5015968e0af">ads1115_get_compare_mode</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#ac717c4f9401a830d9e3c338ade85cf1a">ads1115_comp_mode_t</a> *compare)</td></tr>
-<tr class="memdesc:a7056ca89707eae4f7abed5015968e0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current comparator mode from device.  <br /></td></tr>
-<tr class="memitem:a42bcb0bed644ee19e34a0d36593868ba" id="r_a42bcb0bed644ee19e34a0d36593868ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42bcb0bed644ee19e34a0d36593868ba">ads1115_set_compare_queue</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72">ads1115_comp_queue_t</a> comp_queue)</td></tr>
-<tr class="memdesc:a42bcb0bed644ee19e34a0d36593868ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set comparatore queue.  <br /></td></tr>
-<tr class="memitem:a948c35cd07df6c107d57e34a5d5309f0" id="r_a948c35cd07df6c107d57e34a5d5309f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a948c35cd07df6c107d57e34a5d5309f0">ads1115_get_compare_queue</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72">ads1115_comp_queue_t</a> *comp_queue)</td></tr>
-<tr class="memdesc:a948c35cd07df6c107d57e34a5d5309f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get comparatore queue.  <br /></td></tr>
-<tr class="memitem:aaf0d2763b9c72eb92718d24873ced60c" id="r_aaf0d2763b9c72eb92718d24873ced60c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf0d2763b9c72eb92718d24873ced60c">ads1115_set_compare_alert</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#ac75b9da05f4f523fbc2626807d0302aa">ads1115_comp_polarity_t</a> polarity)</td></tr>
-<tr class="memdesc:aaf0d2763b9c72eb92718d24873ced60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the alert pin polatiry mode (ACTIVE_HIGH or ACTIVE_LOW)  <br /></td></tr>
-<tr class="memitem:afb6d513e89d01219f26ff3ab89e6aaff" id="r_afb6d513e89d01219f26ff3ab89e6aaff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb6d513e89d01219f26ff3ab89e6aaff">ads1115_get_compare_alert</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#ac75b9da05f4f523fbc2626807d0302aa">ads1115_comp_polarity_t</a> *polarity)</td></tr>
-<tr class="memdesc:afb6d513e89d01219f26ff3ab89e6aaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the alert pin polatiry (ACTIVE_HIGH or ACTIVE_LOW)  <br /></td></tr>
-<tr class="memitem:a836e960040fe18dbc8770f8d96b3d19b" id="r_a836e960040fe18dbc8770f8d96b3d19b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a836e960040fe18dbc8770f8d96b3d19b">ads1115_set_compare_threshold</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, int16_t low_threshold, int16_t high_threshold)</td></tr>
-<tr class="memdesc:a836e960040fe18dbc8770f8d96b3d19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the comparator low and high threshold.  <br /></td></tr>
-<tr class="memitem:aee2943f63fbc4c5daaec05942022bd58" id="r_aee2943f63fbc4c5daaec05942022bd58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee2943f63fbc4c5daaec05942022bd58">ads1115_get_compare_threshold</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, int16_t *low_threshold, int16_t *high_threshold)</td></tr>
-<tr class="memdesc:aee2943f63fbc4c5daaec05942022bd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the comparator low and high threshold.  <br /></td></tr>
-<tr class="memitem:aa79beed167e5be28c5508026fd1faf83" id="r_aa79beed167e5be28c5508026fd1faf83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa79beed167e5be28c5508026fd1faf83">ads1115_set_compare_latch</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#a69382a9581acd1df707380c157fcdf56">ads1115_comp_latch_t</a> latch)</td></tr>
-<tr class="memdesc:aa79beed167e5be28c5508026fd1faf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set comparator latching mode.  <br /></td></tr>
-<tr class="memitem:a45229478645980bab4e8c4a174ee84e9" id="r_a45229478645980bab4e8c4a174ee84e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45229478645980bab4e8c4a174ee84e9">ads1115_get_compare_latch</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="#a69382a9581acd1df707380c157fcdf56">ads1115_comp_latch_t</a> *latch)</td></tr>
-<tr class="memdesc:a45229478645980bab4e8c4a174ee84e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get comparator latching mode.  <br /></td></tr>
-<tr class="memitem:a843b7ac1928adba6d004f789f7e91302" id="r_a843b7ac1928adba6d004f789f7e91302"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a843b7ac1928adba6d004f789f7e91302">ads1115_is_ready</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, bool *flag)</td></tr>
-<tr class="memdesc:a843b7ac1928adba6d004f789f7e91302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if conversion is ready.  <br /></td></tr>
+<tr class="memitem:gaee310e8f432fb4d3e3ab8591fbee6a83" id="r_gaee310e8f432fb4d3e3ab8591fbee6a83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gaee310e8f432fb4d3e3ab8591fbee6a83">ads1115_init</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle)</td></tr>
+<tr class="memdesc:gaee310e8f432fb4d3e3ab8591fbee6a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the ADS1115 with the provided handle settings.  <br /></td></tr>
+<tr class="memitem:ga3440d1a42696d27c4cacff834225d274" id="r_ga3440d1a42696d27c4cacff834225d274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga3440d1a42696d27c4cacff834225d274">ads1115_deinit</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle)</td></tr>
+<tr class="memdesc:ga3440d1a42696d27c4cacff834225d274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Soft de-initialization and cleanup.  <br /></td></tr>
+<tr class="memitem:gac0dd1b27d59e6ad7ab115e307765e55f" id="r_gac0dd1b27d59e6ad7ab115e307765e55f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gac0dd1b27d59e6ad7ab115e307765e55f">ads1115_set_range</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gad3ddcc5a2227cb0180d83b578d5685a4">ads1115_range_t</a> range)</td></tr>
+<tr class="memdesc:gac0dd1b27d59e6ad7ab115e307765e55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Programmable Gain Amplifier (PGA) range.  <br /></td></tr>
+<tr class="memitem:gae0dbe507e2c576ac7697257d51717234" id="r_gae0dbe507e2c576ac7697257d51717234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gae0dbe507e2c576ac7697257d51717234">ads1115_get_range</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gad3ddcc5a2227cb0180d83b578d5685a4">ads1115_range_t</a> *range)</td></tr>
+<tr class="memdesc:gae0dbe507e2c576ac7697257d51717234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the current PGA range from the handle.  <br /></td></tr>
+<tr class="memitem:ga4409b19f53346385a22d9a79bdfe4a6f" id="r_ga4409b19f53346385a22d9a79bdfe4a6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga4409b19f53346385a22d9a79bdfe4a6f">ads1115_set_data_rate</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gaad7bebb6fe400f1a91096ee8854d6497">ads1115_data_rate_t</a> data_rate)</td></tr>
+<tr class="memdesc:ga4409b19f53346385a22d9a79bdfe4a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the conversion data rate.  <br /></td></tr>
+<tr class="memitem:gaa652ecc77a86ea0019c844274668beb3" id="r_gaa652ecc77a86ea0019c844274668beb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gaa652ecc77a86ea0019c844274668beb3">ads1115_get_data_rate</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gaad7bebb6fe400f1a91096ee8854d6497">ads1115_data_rate_t</a> *data_rate)</td></tr>
+<tr class="memdesc:gaa652ecc77a86ea0019c844274668beb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current data rate.  <br /></td></tr>
+<tr class="memitem:gab2094d9f45c26002234c33009bf7bac9" id="r_gab2094d9f45c26002234c33009bf7bac9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gab2094d9f45c26002234c33009bf7bac9">ads1115_continuous_conversion_start</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle)</td></tr>
+<tr class="memdesc:gab2094d9f45c26002234c33009bf7bac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts continuous conversion mode.  <br /></td></tr>
+<tr class="memitem:gaf942c69ce370e1d984dd27b6fb0472dc" id="r_gaf942c69ce370e1d984dd27b6fb0472dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gaf942c69ce370e1d984dd27b6fb0472dc">ads1115_continuous_conversion_stop</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle)</td></tr>
+<tr class="memdesc:gaf942c69ce370e1d984dd27b6fb0472dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops continuous conversion and enters power-down mode.  <br /></td></tr>
+<tr class="memitem:ga006ac4c54e15adf86117bc18b978c914" id="r_ga006ac4c54e15adf86117bc18b978c914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga006ac4c54e15adf86117bc18b978c914">ads1115_continuous_conversion_read</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, int16_t *adc_raw, float *voltage)</td></tr>
+<tr class="memdesc:ga006ac4c54e15adf86117bc18b978c914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the latest conversion result in continuous mode.  <br /></td></tr>
+<tr class="memitem:ga756f47a1a07ea1f5c1e5e5fd48905f69" id="r_ga756f47a1a07ea1f5c1e5e5fd48905f69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga756f47a1a07ea1f5c1e5e5fd48905f69">ads1115_single_read</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, int16_t *adc_raw, float *voltage)</td></tr>
+<tr class="memdesc:ga756f47a1a07ea1f5c1e5e5fd48905f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a single-shot conversion and returns the result.  <br /></td></tr>
+<tr class="memitem:ga8db153c26cfc2db3ab439ad16dc512fd" id="r_ga8db153c26cfc2db3ab439ad16dc512fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga8db153c26cfc2db3ab439ad16dc512fd">ads1115_set_channel</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gac7d6e5a3ff2b7361a71745d290783884">ads1115_mux_t</a> channel)</td></tr>
+<tr class="memdesc:ga8db153c26cfc2db3ab439ad16dc512fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the input channel(s) via the multiplexer.  <br /></td></tr>
+<tr class="memitem:ga66b8caa526c34429e09f6568b993a0fc" id="r_ga66b8caa526c34429e09f6568b993a0fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga66b8caa526c34429e09f6568b993a0fc">ads1115_get_channel</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gac7d6e5a3ff2b7361a71745d290783884">ads1115_mux_t</a> *channel)</td></tr>
+<tr class="memdesc:ga66b8caa526c34429e09f6568b993a0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current MUX configuration.  <br /></td></tr>
+<tr class="memitem:ga875854bb73f773c292d46e2c09c24ed5" id="r_ga875854bb73f773c292d46e2c09c24ed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga875854bb73f773c292d46e2c09c24ed5">ads1115_set_compare_mode</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gac717c4f9401a830d9e3c338ade85cf1a">ads1115_comp_mode_t</a> compare)</td></tr>
+<tr class="memdesc:ga875854bb73f773c292d46e2c09c24ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the comparator operation mode.  <br /></td></tr>
+<tr class="memitem:ga7056ca89707eae4f7abed5015968e0af" id="r_ga7056ca89707eae4f7abed5015968e0af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga7056ca89707eae4f7abed5015968e0af">ads1115_get_compare_mode</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gac717c4f9401a830d9e3c338ade85cf1a">ads1115_comp_mode_t</a> *compare)</td></tr>
+<tr class="memdesc:ga7056ca89707eae4f7abed5015968e0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current comparator mode.  <br /></td></tr>
+<tr class="memitem:ga42bcb0bed644ee19e34a0d36593868ba" id="r_ga42bcb0bed644ee19e34a0d36593868ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga42bcb0bed644ee19e34a0d36593868ba">ads1115_set_compare_queue</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#ga6cb6e7c92ee7af9b1e92274072fd8c72">ads1115_comp_queue_t</a> comp_queue)</td></tr>
+<tr class="memdesc:ga42bcb0bed644ee19e34a0d36593868ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of conversions before ALERT/RDY pin assertion.  <br /></td></tr>
+<tr class="memitem:ga948c35cd07df6c107d57e34a5d5309f0" id="r_ga948c35cd07df6c107d57e34a5d5309f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga948c35cd07df6c107d57e34a5d5309f0">ads1115_get_compare_queue</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#ga6cb6e7c92ee7af9b1e92274072fd8c72">ads1115_comp_queue_t</a> *comp_queue)</td></tr>
+<tr class="memdesc:ga948c35cd07df6c107d57e34a5d5309f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current comparator queue setting.  <br /></td></tr>
+<tr class="memitem:gaaf0d2763b9c72eb92718d24873ced60c" id="r_gaaf0d2763b9c72eb92718d24873ced60c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gaaf0d2763b9c72eb92718d24873ced60c">ads1115_set_compare_alert</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gac75b9da05f4f523fbc2626807d0302aa">ads1115_comp_polarity_t</a> polarity)</td></tr>
+<tr class="memdesc:gaaf0d2763b9c72eb92718d24873ced60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures ALERT/RDY pin polarity.  <br /></td></tr>
+<tr class="memitem:gafb6d513e89d01219f26ff3ab89e6aaff" id="r_gafb6d513e89d01219f26ff3ab89e6aaff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gafb6d513e89d01219f26ff3ab89e6aaff">ads1115_get_compare_alert</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#gac75b9da05f4f523fbc2626807d0302aa">ads1115_comp_polarity_t</a> *polarity)</td></tr>
+<tr class="memdesc:gafb6d513e89d01219f26ff3ab89e6aaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets ALERT/RDY pin polarity.  <br /></td></tr>
+<tr class="memitem:ga836e960040fe18dbc8770f8d96b3d19b" id="r_ga836e960040fe18dbc8770f8d96b3d19b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga836e960040fe18dbc8770f8d96b3d19b">ads1115_set_compare_threshold</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, int16_t low_threshold, int16_t high_threshold)</td></tr>
+<tr class="memdesc:ga836e960040fe18dbc8770f8d96b3d19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the high and low thresholds for the comparator.  <br /></td></tr>
+<tr class="memitem:gaee2943f63fbc4c5daaec05942022bd58" id="r_gaee2943f63fbc4c5daaec05942022bd58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gaee2943f63fbc4c5daaec05942022bd58">ads1115_get_compare_threshold</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, int16_t *low_threshold, int16_t *high_threshold)</td></tr>
+<tr class="memdesc:gaee2943f63fbc4c5daaec05942022bd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current high and low threshold values.  <br /></td></tr>
+<tr class="memitem:gaa79beed167e5be28c5508026fd1faf83" id="r_gaa79beed167e5be28c5508026fd1faf83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#gaa79beed167e5be28c5508026fd1faf83">ads1115_set_compare_latch</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#ga69382a9581acd1df707380c157fcdf56">ads1115_comp_latch_t</a> latch)</td></tr>
+<tr class="memdesc:gaa79beed167e5be28c5508026fd1faf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables comparator latching.  <br /></td></tr>
+<tr class="memitem:ga45229478645980bab4e8c4a174ee84e9" id="r_ga45229478645980bab4e8c4a174ee84e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga45229478645980bab4e8c4a174ee84e9">ads1115_get_compare_latch</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, <a class="el" href="group__ADS1115__Enums.html#ga69382a9581acd1df707380c157fcdf56">ads1115_comp_latch_t</a> *latch)</td></tr>
+<tr class="memdesc:ga45229478645980bab4e8c4a174ee84e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current latching setting.  <br /></td></tr>
+<tr class="memitem:ga843b7ac1928adba6d004f789f7e91302" id="r_ga843b7ac1928adba6d004f789f7e91302"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ADS1115__Enums.html#gabe349a9135337d061e760b425d48475c">ads1115_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Functions.html#ga843b7ac1928adba6d004f789f7e91302">ads1115_is_ready</a> (<a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *handle, bool *flag)</td></tr>
+<tr class="memdesc:ga843b7ac1928adba6d004f789f7e91302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the device to check if a conversion is complete.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ADS1115 16-Bit ADC Driver - Platform Independent. </p>
+<div class="textblock"><p>ADS1115 16-Bit ADC Driver - Header File. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Şükrü Can Kılıç </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>19.01.2026</dd></dl>
-<p>Texas Instruments ADS1115 4-Channel 16-Bit ADC with I2C Interface Datasheet: <a href="https://www.ti.com/lit/ds/symlink/ads1115.pdf">https://www.ti.com/lit/ds/symlink/ads1115.pdf</a> </p>
+<dl class="section date"><dt>Date</dt><dd>26-01-2026</dd></dl>
+<p>This driver provides a complete interface for the Texas Instruments ADS1115. It supports single-ended and differential measurements, programmable gain, and comparator functions.</p><ul>
+<li>Datasheet: <a href="https://www.ti.com/lit/ds/symlink/ads1115.pdf">https://www.ti.com/lit/ds/symlink/ads1115.pdf</a> </li>
+</ul>
 
 <p class="definition">Definition in file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
-<a id="a9b80edff76d1b62f6efeb59d1eb875cf" name="a9b80edff76d1b62f6efeb59d1eb875cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b80edff76d1b62f6efeb59d1eb875cf">&#9670;&#160;</a></span>ADS1115_DEFAULT_CONFIGURATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ADS1115_DEFAULT_CONFIGURATION</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    {         \</div>
-<div class="line">    .mux = <a class="code hl_enumvalue" href="#ac7d6e5a3ff2b7361a71745d290783884a9ad6737cba4c3efdf592cb09147c5cba">ADS1115_MUX_AIN0_AIN1</a>,               \</div>
-<div class="line">    .range = <a class="code hl_enumvalue" href="#ad3ddcc5a2227cb0180d83b578d5685a4a24335e637cb85d696b8ae13dfb54ab99">ADS1115_RANGE_2V048</a>,               \</div>
-<div class="line">    .mode = <a class="code hl_enumvalue" href="#abaa3a38dc897f434aaa0ff12ebaaa7c3a061a9704017e3768dd7ac7ec4512ace0">ADS1115_MODE_SINGLE_SHOT</a>,           \</div>
-<div class="line">    .data_rate = <a class="code hl_enumvalue" href="#aad7bebb6fe400f1a91096ee8854d6497a4025ce471c9091b1a26cb20ba5af9772">ADS1115_DR_128_SPS</a>,            \</div>
-<div class="line">    .comp_mode = <a class="code hl_enumvalue" href="#ac717c4f9401a830d9e3c338ade85cf1aa87ef6456a7dc5c21a825d13aac3ac43d">ADS1115_COMP_MODE_TRADITIONAL</a>, \</div>
-<div class="line">    .comp_pol = <a class="code hl_enumvalue" href="#ac75b9da05f4f523fbc2626807d0302aaa4d2a8c4f959d6415e47ece839bdf2d38">ADS1115_COMP_POL_ACTIVE_LOW</a>,    \</div>
-<div class="line">    .comp_latch = <a class="code hl_enumvalue" href="#a69382a9581acd1df707380c157fcdf56aee2a2c221c68c719faba082c1351f85c">ADS1115_COMP_LAT_NON_LATCHING</a>,\</div>
-<div class="line">    .comp_queue = <a class="code hl_enumvalue" href="#a6cb6e7c92ee7af9b1e92274072fd8c72a0d8f0a96798a083657ca9ab3934ca165">ADS1115_COMP_QUE_DISABLE</a>,     \</div>
-<div class="line">    .low_threshold = 0x8000,                    \</div>
-<div class="line">    .high_threshold = 0x7FFF                    \</div>
-<div class="line">}</div>
-<div class="ttc" id="aads1115_8h_html_a69382a9581acd1df707380c157fcdf56aee2a2c221c68c719faba082c1351f85c"><div class="ttname"><a href="#a69382a9581acd1df707380c157fcdf56aee2a2c221c68c719faba082c1351f85c">ADS1115_COMP_LAT_NON_LATCHING</a></div><div class="ttdeci">@ ADS1115_COMP_LAT_NON_LATCHING</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00118">ads1115.h:118</a></div></div>
-<div class="ttc" id="aads1115_8h_html_a6cb6e7c92ee7af9b1e92274072fd8c72a0d8f0a96798a083657ca9ab3934ca165"><div class="ttname"><a href="#a6cb6e7c92ee7af9b1e92274072fd8c72a0d8f0a96798a083657ca9ab3934ca165">ADS1115_COMP_QUE_DISABLE</a></div><div class="ttdeci">@ ADS1115_COMP_QUE_DISABLE</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00129">ads1115.h:129</a></div></div>
-<div class="ttc" id="aads1115_8h_html_aad7bebb6fe400f1a91096ee8854d6497a4025ce471c9091b1a26cb20ba5af9772"><div class="ttname"><a href="#aad7bebb6fe400f1a91096ee8854d6497a4025ce471c9091b1a26cb20ba5af9772">ADS1115_DR_128_SPS</a></div><div class="ttdeci">@ ADS1115_DR_128_SPS</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00092">ads1115.h:92</a></div></div>
-<div class="ttc" id="aads1115_8h_html_abaa3a38dc897f434aaa0ff12ebaaa7c3a061a9704017e3768dd7ac7ec4512ace0"><div class="ttname"><a href="#abaa3a38dc897f434aaa0ff12ebaaa7c3a061a9704017e3768dd7ac7ec4512ace0">ADS1115_MODE_SINGLE_SHOT</a></div><div class="ttdeci">@ ADS1115_MODE_SINGLE_SHOT</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00081">ads1115.h:81</a></div></div>
-<div class="ttc" id="aads1115_8h_html_ac717c4f9401a830d9e3c338ade85cf1aa87ef6456a7dc5c21a825d13aac3ac43d"><div class="ttname"><a href="#ac717c4f9401a830d9e3c338ade85cf1aa87ef6456a7dc5c21a825d13aac3ac43d">ADS1115_COMP_MODE_TRADITIONAL</a></div><div class="ttdeci">@ ADS1115_COMP_MODE_TRADITIONAL</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00102">ads1115.h:102</a></div></div>
-<div class="ttc" id="aads1115_8h_html_ac75b9da05f4f523fbc2626807d0302aaa4d2a8c4f959d6415e47ece839bdf2d38"><div class="ttname"><a href="#ac75b9da05f4f523fbc2626807d0302aaa4d2a8c4f959d6415e47ece839bdf2d38">ADS1115_COMP_POL_ACTIVE_LOW</a></div><div class="ttdeci">@ ADS1115_COMP_POL_ACTIVE_LOW</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00110">ads1115.h:110</a></div></div>
-<div class="ttc" id="aads1115_8h_html_ac7d6e5a3ff2b7361a71745d290783884a9ad6737cba4c3efdf592cb09147c5cba"><div class="ttname"><a href="#ac7d6e5a3ff2b7361a71745d290783884a9ad6737cba4c3efdf592cb09147c5cba">ADS1115_MUX_AIN0_AIN1</a></div><div class="ttdeci">@ ADS1115_MUX_AIN0_AIN1</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00054">ads1115.h:54</a></div></div>
-<div class="ttc" id="aads1115_8h_html_ad3ddcc5a2227cb0180d83b578d5685a4a24335e637cb85d696b8ae13dfb54ab99"><div class="ttname"><a href="#ad3ddcc5a2227cb0180d83b578d5685a4a24335e637cb85d696b8ae13dfb54ab99">ADS1115_RANGE_2V048</a></div><div class="ttdeci">@ ADS1115_RANGE_2V048</div><div class="ttdef"><b>Definition</b> <a href="ads1115_8h_source.html#l00070">ads1115.h:70</a></div></div>
-</div><!-- fragment -->
-<p>Default configuration values at compile time. </p>
-<p>These values match the ADS1115 power-up defaults as per datasheet. Users can modify these at runtime using setter functions. </p>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00207">207</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
-<a id="a2e82240ef42eb5a490b4cbc5f8e2d809" name="a2e82240ef42eb5a490b4cbc5f8e2d809"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e82240ef42eb5a490b4cbc5f8e2d809">&#9670;&#160;</a></span>ads1115_delay_ms_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* ads1115_delay_ms_t) (uint32_t milliseconds)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Delay callback function type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">milliseconds</td><td>Delay duration in milliseconds </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00163">163</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="a3a0f1e6f2cfd94a667f605d8baead7ca" name="a3a0f1e6f2cfd94a667f605d8baead7ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a0f1e6f2cfd94a667f605d8baead7ca">&#9670;&#160;</a></span>ads1115_i2c_read_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef bool(* ads1115_i2c_read_t) (uint8_t device_addr, uint8_t reg_addr, uint8_t *data, uint8_t length)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2C read callback function type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device_addr</td><td>I2C device address (7-bit) </td></tr>
-    <tr><td class="paramname">reg_addr</td><td>Register address to read from </td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to buffer to store read data </td></tr>
-    <tr><td class="paramname">length</td><td>Number of bytes to read </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if read successful, false otherwise </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00156">156</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="a7f92f74640465fba87e6c0594854f70a" name="a7f92f74640465fba87e6c0594854f70a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f92f74640465fba87e6c0594854f70a">&#9670;&#160;</a></span>ads1115_i2c_write_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef bool(* ads1115_i2c_write_t) (uint8_t device_addr, uint8_t reg_addr, const uint8_t *data, uint8_t length)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2C write callback function type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device_addr</td><td>I2C device address (7-bit) </td></tr>
-    <tr><td class="paramname">reg_addr</td><td>Register address to write to </td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to data buffer to write </td></tr>
-    <tr><td class="paramname">length</td><td>Number of bytes to write </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if write successful, false otherwise </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00145">145</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
-<a id="a69382a9581acd1df707380c157fcdf56" name="a69382a9581acd1df707380c157fcdf56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69382a9581acd1df707380c157fcdf56">&#9670;&#160;</a></span>ads1115_comp_latch_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#a69382a9581acd1df707380c157fcdf56">ads1115_comp_latch_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Latching comparator. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a69382a9581acd1df707380c157fcdf56aee2a2c221c68c719faba082c1351f85c" name="a69382a9581acd1df707380c157fcdf56aee2a2c221c68c719faba082c1351f85c"></a>ADS1115_COMP_LAT_NON_LATCHING&#160;</td><td class="fielddoc"><p>Nonlatching comparator - Default </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a69382a9581acd1df707380c157fcdf56aa68e197827075d12076aef1cd01ff025" name="a69382a9581acd1df707380c157fcdf56aa68e197827075d12076aef1cd01ff025"></a>ADS1115_COMP_LAT_LATCHING&#160;</td><td class="fielddoc"><p>Latching comparator </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00117">117</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="ac717c4f9401a830d9e3c338ade85cf1a" name="ac717c4f9401a830d9e3c338ade85cf1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac717c4f9401a830d9e3c338ade85cf1a">&#9670;&#160;</a></span>ads1115_comp_mode_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#ac717c4f9401a830d9e3c338ade85cf1a">ads1115_comp_mode_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Comperator mode. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac717c4f9401a830d9e3c338ade85cf1aa87ef6456a7dc5c21a825d13aac3ac43d" name="ac717c4f9401a830d9e3c338ade85cf1aa87ef6456a7dc5c21a825d13aac3ac43d"></a>ADS1115_COMP_MODE_TRADITIONAL&#160;</td><td class="fielddoc"><p>Traditional comparator </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac717c4f9401a830d9e3c338ade85cf1aad5006e3c4d79ed5af648741b9fce71c4" name="ac717c4f9401a830d9e3c338ade85cf1aad5006e3c4d79ed5af648741b9fce71c4"></a>ADS1115_COMP_MODE_WINDOW&#160;</td><td class="fielddoc"><p>Window comparator </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00101">101</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="ac75b9da05f4f523fbc2626807d0302aa" name="ac75b9da05f4f523fbc2626807d0302aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac75b9da05f4f523fbc2626807d0302aa">&#9670;&#160;</a></span>ads1115_comp_polarity_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#ac75b9da05f4f523fbc2626807d0302aa">ads1115_comp_polarity_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Comparator polarity. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac75b9da05f4f523fbc2626807d0302aaa4d2a8c4f959d6415e47ece839bdf2d38" name="ac75b9da05f4f523fbc2626807d0302aaa4d2a8c4f959d6415e47ece839bdf2d38"></a>ADS1115_COMP_POL_ACTIVE_LOW&#160;</td><td class="fielddoc"><p>Active low - Default </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac75b9da05f4f523fbc2626807d0302aaa15563412abc80fb9b5d555ba271ee895" name="ac75b9da05f4f523fbc2626807d0302aaa15563412abc80fb9b5d555ba271ee895"></a>ADS1115_COMP_POL_ACTIVE_HIGH&#160;</td><td class="fielddoc"><p>Active high </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00109">109</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="a6cb6e7c92ee7af9b1e92274072fd8c72" name="a6cb6e7c92ee7af9b1e92274072fd8c72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cb6e7c92ee7af9b1e92274072fd8c72">&#9670;&#160;</a></span>ads1115_comp_queue_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72">ads1115_comp_queue_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Comparator queue and disable. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6cb6e7c92ee7af9b1e92274072fd8c72a68af0ccda4f115e9cbea58fddbf62647" name="a6cb6e7c92ee7af9b1e92274072fd8c72a68af0ccda4f115e9cbea58fddbf62647"></a>ADS1115_COMP_QUE_1_CONV&#160;</td><td class="fielddoc"><p>Assert after one conversion </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a6cb6e7c92ee7af9b1e92274072fd8c72adb71ddf7c5b2a02eece0afe89b833fe3" name="a6cb6e7c92ee7af9b1e92274072fd8c72adb71ddf7c5b2a02eece0afe89b833fe3"></a>ADS1115_COMP_QUE_2_CONV&#160;</td><td class="fielddoc"><p>Assert after two conversions </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a6cb6e7c92ee7af9b1e92274072fd8c72ade052cdc2f567f94310e386b39fdb309" name="a6cb6e7c92ee7af9b1e92274072fd8c72ade052cdc2f567f94310e386b39fdb309"></a>ADS1115_COMP_QUE_4_CONV&#160;</td><td class="fielddoc"><p>Assert after four conversions </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a6cb6e7c92ee7af9b1e92274072fd8c72a0d8f0a96798a083657ca9ab3934ca165" name="a6cb6e7c92ee7af9b1e92274072fd8c72a0d8f0a96798a083657ca9ab3934ca165"></a>ADS1115_COMP_QUE_DISABLE&#160;</td><td class="fielddoc"><p>Disable comparator and set ALERT/RDY pin to high-impedance - Default </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00125">125</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="aad7bebb6fe400f1a91096ee8854d6497" name="aad7bebb6fe400f1a91096ee8854d6497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad7bebb6fe400f1a91096ee8854d6497">&#9670;&#160;</a></span>ads1115_data_rate_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497">ads1115_data_rate_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Data rate (samples per second) </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aad7bebb6fe400f1a91096ee8854d6497acf2ff47b990bee691c189e45baee9e31" name="aad7bebb6fe400f1a91096ee8854d6497acf2ff47b990bee691c189e45baee9e31"></a>ADS1115_DR_8_SPS&#160;</td><td class="fielddoc"><p>8 samples per second </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aad7bebb6fe400f1a91096ee8854d6497a86652d0938af5d3b93cd4567bf41b4c5" name="aad7bebb6fe400f1a91096ee8854d6497a86652d0938af5d3b93cd4567bf41b4c5"></a>ADS1115_DR_16_SPS&#160;</td><td class="fielddoc"><p>16 samples per second </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aad7bebb6fe400f1a91096ee8854d6497ac98e1baf1464c152e67cd7bd11eb03e0" name="aad7bebb6fe400f1a91096ee8854d6497ac98e1baf1464c152e67cd7bd11eb03e0"></a>ADS1115_DR_32_SPS&#160;</td><td class="fielddoc"><p>32 samples per second </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aad7bebb6fe400f1a91096ee8854d6497a1816fb163518e56366873e5a225d6cc2" name="aad7bebb6fe400f1a91096ee8854d6497a1816fb163518e56366873e5a225d6cc2"></a>ADS1115_DR_64_SPS&#160;</td><td class="fielddoc"><p>64 samples per second </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aad7bebb6fe400f1a91096ee8854d6497a4025ce471c9091b1a26cb20ba5af9772" name="aad7bebb6fe400f1a91096ee8854d6497a4025ce471c9091b1a26cb20ba5af9772"></a>ADS1115_DR_128_SPS&#160;</td><td class="fielddoc"><p>128 samples per second - Default </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aad7bebb6fe400f1a91096ee8854d6497ab6273c58e27a835baeb610e84f70b85b" name="aad7bebb6fe400f1a91096ee8854d6497ab6273c58e27a835baeb610e84f70b85b"></a>ADS1115_DR_250_SPS&#160;</td><td class="fielddoc"><p>250 samples per second </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aad7bebb6fe400f1a91096ee8854d6497a272921736443970e75320e1ab4cdc919" name="aad7bebb6fe400f1a91096ee8854d6497a272921736443970e75320e1ab4cdc919"></a>ADS1115_DR_475_SPS&#160;</td><td class="fielddoc"><p>475 samples per second </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aad7bebb6fe400f1a91096ee8854d6497abd00c2f744614baebf221aca38c4cfc2" name="aad7bebb6fe400f1a91096ee8854d6497abd00c2f744614baebf221aca38c4cfc2"></a>ADS1115_DR_860_SPS&#160;</td><td class="fielddoc"><p>860 samples per second </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00087">87</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="abe349a9135337d061e760b425d48475c" name="abe349a9135337d061e760b425d48475c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe349a9135337d061e760b425d48475c">&#9670;&#160;</a></span>ads1115_error_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Error codes for ADS1115 operations. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abe349a9135337d061e760b425d48475caf4d2038aadaef7c954d2a4179126d6c6" name="abe349a9135337d061e760b425d48475caf4d2038aadaef7c954d2a4179126d6c6"></a>ADS1115_OK&#160;</td><td class="fielddoc"><p>Operation successful </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abe349a9135337d061e760b425d48475ca1fd9303663bc12601773e4eff60c32c3" name="abe349a9135337d061e760b425d48475ca1fd9303663bc12601773e4eff60c32c3"></a>ADS1115_ERROR_INVALID_PARAM&#160;</td><td class="fielddoc"><p>Invalid parameter passed </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abe349a9135337d061e760b425d48475ca9711416ad1bfdcf19d900063a2a8213a" name="abe349a9135337d061e760b425d48475ca9711416ad1bfdcf19d900063a2a8213a"></a>ADS1115_ERROR_I2C_WRITE&#160;</td><td class="fielddoc"><p>I2C write operation failed </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abe349a9135337d061e760b425d48475ca46e38212689b4a9ec823dfdc4afd75cf" name="abe349a9135337d061e760b425d48475ca46e38212689b4a9ec823dfdc4afd75cf"></a>ADS1115_ERROR_I2C_READ&#160;</td><td class="fielddoc"><p>I2C read operation failed </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abe349a9135337d061e760b425d48475ca0fcb29199dfe9a862505bc6e9e5effd8" name="abe349a9135337d061e760b425d48475ca0fcb29199dfe9a862505bc6e9e5effd8"></a>ADS1115_ERROR_TIMEOUT&#160;</td><td class="fielddoc"><p>Operation timeout </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abe349a9135337d061e760b425d48475cabad18da4a9c11e94ca25ae368c771120" name="abe349a9135337d061e760b425d48475cabad18da4a9c11e94ca25ae368c771120"></a>ADS1115_ERROR_NOT_INITIALIZED&#160;</td><td class="fielddoc"><p>Device not initialized </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abe349a9135337d061e760b425d48475cafdb46bd061cadda4e3b8619031fe8586" name="abe349a9135337d061e760b425d48475cafdb46bd061cadda4e3b8619031fe8586"></a>ADS1115_ERROR_CONVERSION_BUSY&#160;</td><td class="fielddoc"><p>Conversion in progress </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abe349a9135337d061e760b425d48475cac7e6f14d281b17f6889d7f1a11f7c59d" name="abe349a9135337d061e760b425d48475cac7e6f14d281b17f6889d7f1a11f7c59d"></a>ADS1115_ERROR_NULL_POINTER&#160;</td><td class="fielddoc"><p>Null pointer passed </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00029">29</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="aefd45489aa6752769eec45984c273136" name="aefd45489aa6752769eec45984c273136"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefd45489aa6752769eec45984c273136">&#9670;&#160;</a></span>ads1115_i2c_addr_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#aefd45489aa6752769eec45984c273136">ads1115_i2c_addr_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2C address selection based on ADDR pin connection. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aefd45489aa6752769eec45984c273136ae00dba43251498783cde4bd77e0842d2" name="aefd45489aa6752769eec45984c273136ae00dba43251498783cde4bd77e0842d2"></a>ADS1115_ADDR_GND&#160;</td><td class="fielddoc"><p>ADDR pin connected to GND </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aefd45489aa6752769eec45984c273136af4bfa7aff4035b364d33e198ba03428d" name="aefd45489aa6752769eec45984c273136af4bfa7aff4035b364d33e198ba03428d"></a>ADS1115_ADDR_VDD&#160;</td><td class="fielddoc"><p>ADDR pin connected to VDD </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aefd45489aa6752769eec45984c273136a345c181fa05ffd93175a861ddd434589" name="aefd45489aa6752769eec45984c273136a345c181fa05ffd93175a861ddd434589"></a>ADS1115_ADDR_SDA&#160;</td><td class="fielddoc"><p>ADDR pin connected to SDA </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aefd45489aa6752769eec45984c273136a89713b378cd809d0ef29c564a40bd7d8" name="aefd45489aa6752769eec45984c273136a89713b378cd809d0ef29c564a40bd7d8"></a>ADS1115_ADDR_SCL&#160;</td><td class="fielddoc"><p>ADDR pin connected to SCL </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00043">43</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="abaa3a38dc897f434aaa0ff12ebaaa7c3" name="abaa3a38dc897f434aaa0ff12ebaaa7c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaa3a38dc897f434aaa0ff12ebaaa7c3">&#9670;&#160;</a></span>ads1115_mode_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#abaa3a38dc897f434aaa0ff12ebaaa7c3">ads1115_mode_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Device operating mode. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abaa3a38dc897f434aaa0ff12ebaaa7c3a42db4b2f27c517633aee29f5d5a657ad" name="abaa3a38dc897f434aaa0ff12ebaaa7c3a42db4b2f27c517633aee29f5d5a657ad"></a>ADS1115_MODE_CONTINUOUS&#160;</td><td class="fielddoc"><p>Continuous conversion mode </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abaa3a38dc897f434aaa0ff12ebaaa7c3a061a9704017e3768dd7ac7ec4512ace0" name="abaa3a38dc897f434aaa0ff12ebaaa7c3a061a9704017e3768dd7ac7ec4512ace0"></a>ADS1115_MODE_SINGLE_SHOT&#160;</td><td class="fielddoc"><p>Single-shot conversion mode </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00079">79</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="ac7d6e5a3ff2b7361a71745d290783884" name="ac7d6e5a3ff2b7361a71745d290783884"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7d6e5a3ff2b7361a71745d290783884">&#9670;&#160;</a></span>ads1115_mux_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884">ads1115_mux_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Input multiplexer configuration (channel selection) </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac7d6e5a3ff2b7361a71745d290783884a9ad6737cba4c3efdf592cb09147c5cba" name="ac7d6e5a3ff2b7361a71745d290783884a9ad6737cba4c3efdf592cb09147c5cba"></a>ADS1115_MUX_AIN0_AIN1&#160;</td><td class="fielddoc"><p>Differantial: AIN0 - AIN1 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac7d6e5a3ff2b7361a71745d290783884ad7b0accf986f84e05332c9874da0c50e" name="ac7d6e5a3ff2b7361a71745d290783884ad7b0accf986f84e05332c9874da0c50e"></a>ADS1115_MUX_AIN0_AIN3&#160;</td><td class="fielddoc"><p>Differantial: AIN0 - AIN3 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac7d6e5a3ff2b7361a71745d290783884a49fc5b53647faec816193015387f5697" name="ac7d6e5a3ff2b7361a71745d290783884a49fc5b53647faec816193015387f5697"></a>ADS1115_MUX_AIN1_AIN3&#160;</td><td class="fielddoc"><p>Differantial: AIN1 - AIN3 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac7d6e5a3ff2b7361a71745d290783884a91c644a24ccdb13cc8cb8d18292cbc6c" name="ac7d6e5a3ff2b7361a71745d290783884a91c644a24ccdb13cc8cb8d18292cbc6c"></a>ADS1115_MUX_AIN2_AIN3&#160;</td><td class="fielddoc"><p>Differantial: AIN2 - AIN3 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac7d6e5a3ff2b7361a71745d290783884a155e9823641644fbbb9f23f7aac4a556" name="ac7d6e5a3ff2b7361a71745d290783884a155e9823641644fbbb9f23f7aac4a556"></a>ADS1115_MUX_AIN0_GND&#160;</td><td class="fielddoc"><p>Single-ended: AIN0 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac7d6e5a3ff2b7361a71745d290783884a8c86fa71ada5db36fdcfdc3e75fa4835" name="ac7d6e5a3ff2b7361a71745d290783884a8c86fa71ada5db36fdcfdc3e75fa4835"></a>ADS1115_MUX_AIN1_GND&#160;</td><td class="fielddoc"><p>Single-ended: AIN1 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac7d6e5a3ff2b7361a71745d290783884afc57704ec9ab5b749cceaf1abc13e2d2" name="ac7d6e5a3ff2b7361a71745d290783884afc57704ec9ab5b749cceaf1abc13e2d2"></a>ADS1115_MUX_AIN2_GND&#160;</td><td class="fielddoc"><p>Single-ended: AIN2 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac7d6e5a3ff2b7361a71745d290783884afe0e2ac573709e2b519b71b12367aeb4" name="ac7d6e5a3ff2b7361a71745d290783884afe0e2ac573709e2b519b71b12367aeb4"></a>ADS1115_MUX_AIN3_GND&#160;</td><td class="fielddoc"><p>Single-ended: AIN3 </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00053">53</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a id="ad3ddcc5a2227cb0180d83b578d5685a4" name="ad3ddcc5a2227cb0180d83b578d5685a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3ddcc5a2227cb0180d83b578d5685a4">&#9670;&#160;</a></span>ads1115_range_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4">ads1115_range_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Programmable gain amplifier configuration. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad3ddcc5a2227cb0180d83b578d5685a4a79c21c30f75882c3cb73d3fc53a40f35" name="ad3ddcc5a2227cb0180d83b578d5685a4a79c21c30f75882c3cb73d3fc53a40f35"></a>ADS1115_RANGE_6V144&#160;</td><td class="fielddoc"><p>+/- 6.144V range (FSR = 6.144V) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad3ddcc5a2227cb0180d83b578d5685a4a9cea75232f9b4bf60d068dee352de56c" name="ad3ddcc5a2227cb0180d83b578d5685a4a9cea75232f9b4bf60d068dee352de56c"></a>ADS1115_RANGE_4V096&#160;</td><td class="fielddoc"><p>+/- 4.096V range (FSR = 4.096V) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad3ddcc5a2227cb0180d83b578d5685a4a24335e637cb85d696b8ae13dfb54ab99" name="ad3ddcc5a2227cb0180d83b578d5685a4a24335e637cb85d696b8ae13dfb54ab99"></a>ADS1115_RANGE_2V048&#160;</td><td class="fielddoc"><p>+/- 2.048V range (FSR = 2.048V) - Default </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad3ddcc5a2227cb0180d83b578d5685a4a5a34029a213f000869c2de9ba0250b51" name="ad3ddcc5a2227cb0180d83b578d5685a4a5a34029a213f000869c2de9ba0250b51"></a>ADS1115_RANGE_1V024&#160;</td><td class="fielddoc"><p>+/- 1.024V range (FSR = 1.024V) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad3ddcc5a2227cb0180d83b578d5685a4afbe73ff3e1ffcddb7396a76c844f747c" name="ad3ddcc5a2227cb0180d83b578d5685a4afbe73ff3e1ffcddb7396a76c844f747c"></a>ADS1115_RANGE_0V512&#160;</td><td class="fielddoc"><p>+/- 0.512V range (FSR = 0.512V) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad3ddcc5a2227cb0180d83b578d5685a4afa3a85b07199ccf5a219529ac3230def" name="ad3ddcc5a2227cb0180d83b578d5685a4afa3a85b07199ccf5a219529ac3230def"></a>ADS1115_RANGE_0V256&#160;</td><td class="fielddoc"><p>+/- 0.256V range (FSR = 0.256V) </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8h_source.html#l00067">67</a> of file <a class="el" href="ads1115_8h_source.html">ads1115.h</a>.</p>
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a006ac4c54e15adf86117bc18b978c914" name="a006ac4c54e15adf86117bc18b978c914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a006ac4c54e15adf86117bc18b978c914">&#9670;&#160;</a></span>ads1115_continuous_conversion_read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_continuous_conversion_read </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t *</td>          <td class="paramname"><span class="paramname"><em>adc_raw</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>voltage</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Read the result of adc continuously. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">adc_raw</td><td>Pointer to raw adc result </td></tr>
-    <tr><td class="paramname">voltage</td><td>Pointer to converted adc result </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00322">322</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="ab2094d9f45c26002234c33009bf7bac9" name="ab2094d9f45c26002234c33009bf7bac9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2094d9f45c26002234c33009bf7bac9">&#9670;&#160;</a></span>ads1115_continuous_conversion_start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_continuous_conversion_start </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start adc continuous conversion mode. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00300">300</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="af942c69ce370e1d984dd27b6fb0472dc" name="af942c69ce370e1d984dd27b6fb0472dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af942c69ce370e1d984dd27b6fb0472dc">&#9670;&#160;</a></span>ads1115_continuous_conversion_stop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_continuous_conversion_stop </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Stop adc continuous conversion mode. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00311">311</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a3440d1a42696d27c4cacff834225d274" name="a3440d1a42696d27c4cacff834225d274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3440d1a42696d27c4cacff834225d274">&#9670;&#160;</a></span>ads1115_deinit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_deinit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>De-initialize ADS1115 device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00211">211</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a66b8caa526c34429e09f6568b993a0fc" name="a66b8caa526c34429e09f6568b993a0fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66b8caa526c34429e09f6568b993a0fc">&#9670;&#160;</a></span>ads1115_get_channel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_get_channel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884">ads1115_mux_t</a> *</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set adc input channel from mux. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">channel</td><td>Pointer to input adc channel from mux </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00409">409</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="afb6d513e89d01219f26ff3ab89e6aaff" name="afb6d513e89d01219f26ff3ab89e6aaff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb6d513e89d01219f26ff3ab89e6aaff">&#9670;&#160;</a></span>ads1115_get_compare_alert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_get_compare_alert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ac75b9da05f4f523fbc2626807d0302aa">ads1115_comp_polarity_t</a> *</td>          <td class="paramname"><span class="paramname"><em>polarity</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the alert pin polatiry (ACTIVE_HIGH or ACTIVE_LOW) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">polarity</td><td>Pointer to alert pin polarity </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00565">565</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a45229478645980bab4e8c4a174ee84e9" name="a45229478645980bab4e8c4a174ee84e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45229478645980bab4e8c4a174ee84e9">&#9670;&#160;</a></span>ads1115_get_compare_latch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_get_compare_latch </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a69382a9581acd1df707380c157fcdf56">ads1115_comp_latch_t</a> *</td>          <td class="paramname"><span class="paramname"><em>latch</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get comparator latching mode. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">latch</td><td>Pointer to comparator latch </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00526">526</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a7056ca89707eae4f7abed5015968e0af" name="a7056ca89707eae4f7abed5015968e0af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7056ca89707eae4f7abed5015968e0af">&#9670;&#160;</a></span>ads1115_get_compare_mode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_get_compare_mode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ac717c4f9401a830d9e3c338ade85cf1a">ads1115_comp_mode_t</a> *</td>          <td class="paramname"><span class="paramname"><em>compare</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get current comparator mode from device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">compare</td><td>Pointer to interrupt compare mode </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00448">448</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a948c35cd07df6c107d57e34a5d5309f0" name="a948c35cd07df6c107d57e34a5d5309f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a948c35cd07df6c107d57e34a5d5309f0">&#9670;&#160;</a></span>ads1115_get_compare_queue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_get_compare_queue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72">ads1115_comp_queue_t</a> *</td>          <td class="paramname"><span class="paramname"><em>comp_queue</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get comparatore queue. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">comp_queue</td><td>Pointer to comparator queue </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00487">487</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="aee2943f63fbc4c5daaec05942022bd58" name="aee2943f63fbc4c5daaec05942022bd58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee2943f63fbc4c5daaec05942022bd58">&#9670;&#160;</a></span>ads1115_get_compare_threshold()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_get_compare_threshold </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t *</td>          <td class="paramname"><span class="paramname"><em>low_threshold</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t *</td>          <td class="paramname"><span class="paramname"><em>high_threshold</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the comparator low and high threshold. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">low_threshold</td><td>Pointer to compare low threshold </td></tr>
-    <tr><td class="paramname">high_threshold</td><td>Pointer to compare high threshold </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00607">607</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="aa652ecc77a86ea0019c844274668beb3" name="aa652ecc77a86ea0019c844274668beb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa652ecc77a86ea0019c844274668beb3">&#9670;&#160;</a></span>ads1115_get_data_rate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_get_data_rate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497">ads1115_data_rate_t</a> *</td>          <td class="paramname"><span class="paramname"><em>data_rate</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get adc data sample rate. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">data_rate</td><td>Data rate setting </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00277">277</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="ae0dbe507e2c576ac7697257d51717234" name="ae0dbe507e2c576ac7697257d51717234"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0dbe507e2c576ac7697257d51717234">&#9670;&#160;</a></span>ads1115_get_range()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_get_range </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4">ads1115_range_t</a> *</td>          <td class="paramname"><span class="paramname"><em>range</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get range of adc. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">range</td><td>Maximum voltage range </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00238">238</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="aee310e8f432fb4d3e3ab8591fbee6a83" name="aee310e8f432fb4d3e3ab8591fbee6a83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee310e8f432fb4d3e3ab8591fbee6a83">&#9670;&#160;</a></span>ads1115_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize ADS1115 device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00175">175</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a843b7ac1928adba6d004f789f7e91302" name="a843b7ac1928adba6d004f789f7e91302"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a843b7ac1928adba6d004f789f7e91302">&#9670;&#160;</a></span>ads1115_is_ready()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_is_ready </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>flag</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if conversion is ready. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">flag</td><td>Pointer to store flag status </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00639">639</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a8db153c26cfc2db3ab439ad16dc512fd" name="a8db153c26cfc2db3ab439ad16dc512fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8db153c26cfc2db3ab439ad16dc512fd">&#9670;&#160;</a></span>ads1115_set_channel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_set_channel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ac7d6e5a3ff2b7361a71745d290783884">ads1115_mux_t</a></td>          <td class="paramname"><span class="paramname"><em>channel</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set adc input channel from mux. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">channel</td><td>Input adc channel from mux </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00393">393</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="aaf0d2763b9c72eb92718d24873ced60c" name="aaf0d2763b9c72eb92718d24873ced60c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf0d2763b9c72eb92718d24873ced60c">&#9670;&#160;</a></span>ads1115_set_compare_alert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_set_compare_alert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ac75b9da05f4f523fbc2626807d0302aa">ads1115_comp_polarity_t</a></td>          <td class="paramname"><span class="paramname"><em>polarity</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the alert pin polatiry mode (ACTIVE_HIGH or ACTIVE_LOW) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">polarity</td><td>Alert pin polarity </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00549">549</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="aa79beed167e5be28c5508026fd1faf83" name="aa79beed167e5be28c5508026fd1faf83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa79beed167e5be28c5508026fd1faf83">&#9670;&#160;</a></span>ads1115_set_compare_latch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_set_compare_latch </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a69382a9581acd1df707380c157fcdf56">ads1115_comp_latch_t</a></td>          <td class="paramname"><span class="paramname"><em>latch</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set comparator latching mode. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">latch</td><td>Comparator latch </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00510">510</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a875854bb73f773c292d46e2c09c24ed5" name="a875854bb73f773c292d46e2c09c24ed5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a875854bb73f773c292d46e2c09c24ed5">&#9670;&#160;</a></span>ads1115_set_compare_mode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_set_compare_mode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ac717c4f9401a830d9e3c338ade85cf1a">ads1115_comp_mode_t</a></td>          <td class="paramname"><span class="paramname"><em>compare</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set comparator mode. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">compare</td><td>Interrupt compare mode </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00432">432</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a42bcb0bed644ee19e34a0d36593868ba" name="a42bcb0bed644ee19e34a0d36593868ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42bcb0bed644ee19e34a0d36593868ba">&#9670;&#160;</a></span>ads1115_set_compare_queue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_set_compare_queue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a6cb6e7c92ee7af9b1e92274072fd8c72">ads1115_comp_queue_t</a></td>          <td class="paramname"><span class="paramname"><em>comp_queue</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set comparatore queue. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">comp_queue</td><td>Comparator queue </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00471">471</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a836e960040fe18dbc8770f8d96b3d19b" name="a836e960040fe18dbc8770f8d96b3d19b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a836e960040fe18dbc8770f8d96b3d19b">&#9670;&#160;</a></span>ads1115_set_compare_threshold()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_set_compare_threshold </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>low_threshold</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>high_threshold</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the comparator low and high threshold. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">low_threshold</td><td>Compare low threshold </td></tr>
-    <tr><td class="paramname">high_threshold</td><td>Compare high threshold </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00588">588</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a4409b19f53346385a22d9a79bdfe4a6f" name="a4409b19f53346385a22d9a79bdfe4a6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4409b19f53346385a22d9a79bdfe4a6f">&#9670;&#160;</a></span>ads1115_set_data_rate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_set_data_rate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#aad7bebb6fe400f1a91096ee8854d6497">ads1115_data_rate_t</a></td>          <td class="paramname"><span class="paramname"><em>data_rate</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set adc data sample rate. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">data_rate</td><td>Data rate setting </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00261">261</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="ac0dd1b27d59e6ad7ab115e307765e55f" name="ac0dd1b27d59e6ad7ab115e307765e55f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0dd1b27d59e6ad7ab115e307765e55f">&#9670;&#160;</a></span>ads1115_set_range()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_set_range </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ad3ddcc5a2227cb0180d83b578d5685a4">ads1115_range_t</a></td>          <td class="paramname"><span class="paramname"><em>range</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set range of adc. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">range</td><td>Maximum voltage range </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00222">222</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-<a id="a756f47a1a07ea1f5c1e5e5fd48905f69" name="a756f47a1a07ea1f5c1e5e5fd48905f69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a756f47a1a07ea1f5c1e5e5fd48905f69">&#9670;&#160;</a></span>ads1115_single_read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#abe349a9135337d061e760b425d48475c">ads1115_error_t</a> ads1115_single_read </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structads1115__handle__t.html">ads1115_handle_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t *</td>          <td class="paramname"><span class="paramname"><em>adc_raw</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>voltage</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Read adc result once. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handle</td><td>Pointer to device handle </td></tr>
-    <tr><td class="paramname">adc_raw</td><td>Pointer to raw adc result </td></tr>
-    <tr><td class="paramname">voltage</td><td>Pointer to converted adc result </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#abe349a9135337d061e760b425d48475c" title="Error codes for ADS1115 operations.">ads1115_error_t</a> Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115_8c_source.html#l00347">347</a> of file <a class="el" href="ads1115_8c_source.html">ads1115.c</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>
