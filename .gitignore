@@ -53,6 +53,8 @@ dkms.conf
 latex/
 docs/
 doxygen-awesome-css/
+docs/html/
+html/
 
 # debug information files
 *.dwo
