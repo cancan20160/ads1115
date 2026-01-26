@@ -68,14 +68,14 @@ typedef enum
  */
 typedef enum
 {
-    ADS1115_MUX_AIN0_AIN1 = 0, /**< Differential: $V_{IN} = AIN_0 - AIN_1$ */
-    ADS1115_MUX_AIN0_AIN3 = 1, /**< Differential: $V_{IN} = AIN_0 - AIN_3$ */
-    ADS1115_MUX_AIN1_AIN3 = 2, /**< Differential: $V_{IN} = AIN_1 - AIN_3$ */
-    ADS1115_MUX_AIN2_AIN3 = 3, /**< Differential: $V_{IN} = AIN_2 - AIN_3$ */
-    ADS1115_MUX_AIN0_GND = 4,  /**< Single-ended: $AIN_0$ vs GND */
-    ADS1115_MUX_AIN1_GND = 5,  /**< Single-ended: $AIN_1$ vs GND */
-    ADS1115_MUX_AIN2_GND = 6,  /**< Single-ended: $AIN_2$ vs GND */
-    ADS1115_MUX_AIN3_GND = 7,  /**< Single-ended: $AIN_3$ vs GND */
+    ADS1115_MUX_AIN0_AIN1 = 0, /**< Differential: $$V_{IN} = A_{IN0} - A_{IN1}$$ */
+    ADS1115_MUX_AIN0_AIN3 = 1, /**< Differential: $$V_{IN} = A_{IN0} - A_{IN3}$$ */
+    ADS1115_MUX_AIN1_AIN3 = 2, /**< Differential: $$V_{IN} = A_{IN1} - A_{IN3}$$ */
+    ADS1115_MUX_AIN2_AIN3 = 3, /**< Differential: $$V_{IN} = A_{IN2} - A_{IN3}$$ */
+    ADS1115_MUX_AIN0_GND = 4,  /**< Single-ended: $$A_{IN0} - GND$$ */
+    ADS1115_MUX_AIN1_GND = 5,  /**< Single-ended: $$A_{IN1} - GND$$ */
+    ADS1115_MUX_AIN2_GND = 6,  /**< Single-ended: $$A_{IN2} - GND$$ */
+    ADS1115_MUX_AIN3_GND = 7,  /**< Single-ended: $$A_{IN3} - GND$$ */
 } ads1115_mux_t;
 
 /**
@@ -83,12 +83,12 @@ typedef enum
  */
 typedef enum
 {
-    ADS1115_RANGE_6V144 = 0, /**< $\pm 6.144V$ range (FSR = 6.144V) */
-    ADS1115_RANGE_4V096 = 1, /**< $\pm 4.096V$ range (FSR = 4.096V) */
-    ADS1115_RANGE_2V048 = 2, /**< $\pm 2.048V$ range (FSR = 2.048V) - Default */
-    ADS1115_RANGE_1V024 = 3, /**< $\pm 1.024V$ range (FSR = 1.024V) */
-    ADS1115_RANGE_0V512 = 4, /**< $\pm 0.512V$ range (FSR = 0.512V) */
-    ADS1115_RANGE_0V256 = 5, /**< $\pm 0.256V$ range (FSR = 0.256V) */
+    ADS1115_RANGE_6V144 = 0, /**< @f$\pm 6.144V@f$ range (FSR = 6.144V) */
+    ADS1115_RANGE_4V096 = 1, /**< @f$\pm 4.096V@f$ range (FSR = 4.096V) */
+    ADS1115_RANGE_2V048 = 2, /**< @f$\pm 2.048V@f$ range (FSR = 2.048V) - Default */
+    ADS1115_RANGE_1V024 = 3, /**< @f$\pm 1.024V@f$ range (FSR = 1.024V) */
+    ADS1115_RANGE_0V512 = 4, /**< @f$\pm 0.512V@f$ range (FSR = 0.512V) */
+    ADS1115_RANGE_0V256 = 5, /**< @f$\pm 0.256V@f$ range (FSR = 0.256V) */
 } ads1115_range_t;
 
 /**
@@ -304,7 +304,7 @@ ads1115_error_t ads1115_continuous_conversion_stop(ads1115_handle_t *handle);
 
 /**
  * @brief Reads the latest conversion result in continuous mode.
- * * @details The voltage is calculated using:
+ * @details The voltage is calculated using:
  * $$V_{out} = \text{adc\_raw} \times \frac{\text{FSR}}{2^{15}}$$
  * * @param handle Pointer to the device handle structure.
  * @param[out] adc_raw Raw 16-bit signed integer output.
