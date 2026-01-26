@@ -6,5 +6,6 @@ var group__ADS1115__Driver =
     [ "Function Pointers", "group__ADS1115__Callbacks.html", null ],
     [ "Structures", "group__ADS1115__Structs.html", "group__ADS1115__Structs" ],
     [ "API Functions", "group__ADS1115__Functions.html", "group__ADS1115__Functions" ],
+    [ "Hardware Interface", "group__ADS1115__Interface.html", "group__ADS1115__Interface" ],
     [ "ADS1115_DEFAULT_CONFIGURATION", "group__ADS1115__Driver.html#ga9b80edff76d1b62f6efeb59d1eb875cf", null ]
 ];

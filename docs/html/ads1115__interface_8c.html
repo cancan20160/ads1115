@@ -93,7 +93,7 @@ $(function(){initNavTree('ads1115__interface_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>ADS1115 I2C read/write and delay callback function implementations.  
+<p>ADS1115 Hardware Abstraction Layer - Implementation Template.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ads1115__interface_8h_source.html">ads1115_interface.h</a>&quot;</code><br />
 </div>
@@ -101,138 +101,22 @@ $(function(){initNavTree('ads1115__interface_8c.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a55e739173564587095e6deb3f2d2dc64" id="r_a55e739173564587095e6deb3f2d2dc64"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55e739173564587095e6deb3f2d2dc64">ads1115_i2c_write</a> (uint8_t i2c_addr, uint8_t reg_addr, uint8_t *data, uint16_t len)</td></tr>
-<tr class="memdesc:a55e739173564587095e6deb3f2d2dc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADS1115 I2C write function (ads1115_i2c_write_t callback)  <br /></td></tr>
-<tr class="memitem:aed91b8fad8db648d3f65acfe5424367e" id="r_aed91b8fad8db648d3f65acfe5424367e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed91b8fad8db648d3f65acfe5424367e">ads1115_i2c_read</a> (uint8_t i2c_addr, uint8_t reg_addr, uint8_t *data, uint16_t len)</td></tr>
-<tr class="memdesc:aed91b8fad8db648d3f65acfe5424367e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADS1115 I2C read function (ads1115_i2c_read_t callback)  <br /></td></tr>
-<tr class="memitem:a751c154459a9f0111ddb695b5d57ba9e" id="r_a751c154459a9f0111ddb695b5d57ba9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751c154459a9f0111ddb695b5d57ba9e">ads1115_delay_ms</a> (uint32_t milliseconds)</td></tr>
-<tr class="memdesc:a751c154459a9f0111ddb695b5d57ba9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADS1115 delay_ms function (ads1115_delay_ms_t callback)  <br /></td></tr>
+<tr class="memitem:ga121f46112992619e07d579b02774ce04" id="r_ga121f46112992619e07d579b02774ce04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Interface.html#ga121f46112992619e07d579b02774ce04">ads1115_i2c_write</a> (uint8_t i2c_addr, uint8_t reg_addr, const uint8_t *data, uint8_t len)</td></tr>
+<tr class="memdesc:ga121f46112992619e07d579b02774ce04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific I2C write implementation.  <br /></td></tr>
+<tr class="memitem:gababa66be2f9b29b30a073fa307e31bdd" id="r_gababa66be2f9b29b30a073fa307e31bdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Interface.html#gababa66be2f9b29b30a073fa307e31bdd">ads1115_i2c_read</a> (uint8_t i2c_addr, uint8_t reg_addr, uint8_t *data, uint8_t len)</td></tr>
+<tr class="memdesc:gababa66be2f9b29b30a073fa307e31bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific I2C read implementation.  <br /></td></tr>
+<tr class="memitem:ga751c154459a9f0111ddb695b5d57ba9e" id="r_ga751c154459a9f0111ddb695b5d57ba9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADS1115__Interface.html#ga751c154459a9f0111ddb695b5d57ba9e">ads1115_delay_ms</a> (uint32_t milliseconds)</td></tr>
+<tr class="memdesc:ga751c154459a9f0111ddb695b5d57ba9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific millisecond delay implementation.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ADS1115 I2C read/write and delay callback function implementations. </p>
+<div class="textblock"><p>ADS1115 Hardware Abstraction Layer - Implementation Template. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Şükrü Can Kılıç </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>19.01.2026 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>26-01-2026</dd></dl>
+<p>This file contains the template for hardware-specific I2C and delay functions. You must implement these functions according to your target MCU's peripheral library (e.g., STM32 HAL, ESP-IDF, Arduino Wire). </p>
 
 <p class="definition">Definition in file <a class="el" href="ads1115__interface_8c_source.html">ads1115_interface.c</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a751c154459a9f0111ddb695b5d57ba9e" name="a751c154459a9f0111ddb695b5d57ba9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a751c154459a9f0111ddb695b5d57ba9e">&#9670;&#160;</a></span>ads1115_delay_ms()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ads1115_delay_ms </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>milliseconds</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ADS1115 delay_ms function (ads1115_delay_ms_t callback) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">milliseconds</td><td>Delay time in milliseconds </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115__interface_8c_source.html#l00024">24</a> of file <a class="el" href="ads1115__interface_8c_source.html">ads1115_interface.c</a>.</p>
-
-</div>
-</div>
-<a id="aed91b8fad8db648d3f65acfe5424367e" name="aed91b8fad8db648d3f65acfe5424367e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed91b8fad8db648d3f65acfe5424367e">&#9670;&#160;</a></span>ads1115_i2c_read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t ads1115_i2c_read </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>i2c_addr</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>reg_addr</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ADS1115 I2C read function (ads1115_i2c_read_t callback) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i2c_addr</td><td>ADS1115 I2C address </td></tr>
-    <tr><td class="paramname">reg_addr</td><td>ADS1115 register address </td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to register value </td></tr>
-    <tr><td class="paramname">len</td><td>Length of register value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115__interface_8c_source.html#l00017">17</a> of file <a class="el" href="ads1115__interface_8c_source.html">ads1115_interface.c</a>.</p>
-
-</div>
-</div>
-<a id="a55e739173564587095e6deb3f2d2dc64" name="a55e739173564587095e6deb3f2d2dc64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55e739173564587095e6deb3f2d2dc64">&#9670;&#160;</a></span>ads1115_i2c_write()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t ads1115_i2c_write </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>i2c_addr</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>reg_addr</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ADS1115 I2C write function (ads1115_i2c_write_t callback) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i2c_addr</td><td>ADS1115 I2C address </td></tr>
-    <tr><td class="paramname">reg_addr</td><td>ADS1115 register address </td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to register value </td></tr>
-    <tr><td class="paramname">len</td><td>Length of register value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="ads1115__interface_8c_source.html#l00010">10</a> of file <a class="el" href="ads1115__interface_8c_source.html">ads1115_interface.c</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

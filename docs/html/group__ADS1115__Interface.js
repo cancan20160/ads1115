@@ -1,4 +1,4 @@
-var ads1115__interface_8h =
+var group__ADS1115__Interface =
 [
     [ "ads1115_delay_ms", "group__ADS1115__Interface.html#ga751c154459a9f0111ddb695b5d57ba9e", null ],
     [ "ads1115_i2c_read", "group__ADS1115__Interface.html#gababa66be2f9b29b30a073fa307e31bdd", null ],

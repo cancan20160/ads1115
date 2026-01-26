@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['internal_20registers_0',['Internal Registers',['../group__ADS1115__Registers.html',1,'']]]
+  ['hardware_20interface_0',['Hardware Interface',['../group__ADS1115__Interface.html',1,'']]]
 ];
